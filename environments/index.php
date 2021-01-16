@@ -31,18 +31,14 @@
 return [
     'Development' => [
         'path' => 'dev',
-        'setWritable' => [
-            //'backend/web/assets',
-            'frontend/web/assets',
-            'common/runtime',
-        ],
+        /*'setWritable' => [
+
+        ],*/
         'setExecutable' => [
-            'yii',
-            'yii_test',
+            'bin'
         ],
-        'setCookieValidationKey' => [
+        /*'setCookieValidationKey' => [
             '.env.local',
-            '.env.test',
-        ],
+        ],*/
     ],
 ];
