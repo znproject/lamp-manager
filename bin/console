@@ -1,0 +1,44 @@
+#!/usr/bin/env php
+<?php
+
+use Symfony\Component\Console\Application;
+use Illuminate\Container\Container;
+use ZnCore\Base\Helpers\EnvHelper;
+use ZnCore\Base\Libs\App\Kernel;
+use ZnCore\Base\Libs\App\Loaders\ContainerConfigLoader;
+use ZnCore\Base\Libs\DotEnv\DotEnv;
+use ZnLib\Db\Factories\ManagerFactory;
+use ZnLib\Db\Capsule\Manager;
+
+//require __DIR__ . '/../vendor/autoload.php';
+require_once __DIR__ . '/../Packages/Kernel/autoload.php';
+
+DotEnv::init(__DIR__ . '/..');
+EnvHelper::setErrorVisibleFromEnv();
+
+$container = Container::getInstance();
+$kernel = new Kernel('web');
+$kernel->setContainer($container);
+$kernel->setLoader(new ContainerConfigLoader([
+    __DIR__ . '/../vendor/zntool/package/bin/container.php',
+]));
+$mainConfig = $kernel->loadAppConfig();
+
+$container->bind(Application::class, Application::class, true);
+
+/*$container->bind(Manager::class, function () {
+    return ManagerFactory::createManagerFromEnv();
+}, true);*/
+$application = $container->get(Application::class);
+
+//require  __DIR__.'/../config/container.php';
+//require __DIR__ . '/../vendor/znlib/db/bin/bootstrap.php';
+//require __DIR__ . '/../vendor/znlib/fixture/bin/bootstrap.php';
+//require __DIR__ . '/../vendor/znlib/migration/bin/bootstrap.php';
+require __DIR__ . '/../vendor/zntool/package/bin/bootstrap.php';
+//require __DIR__ . '/../vendor/zntool/phar/bin/bootstrap.php';
+//require __DIR__ . '/../vendor/zntool/stress/bin/bootstrap.php';
+//require __DIR__ . '/../vendor/zntool/dev/bin/bootstrap.php';
+//require __DIR__ . '/../vendor/znbundle/queue/bin/bootstrap.php';
+
+$application->run();

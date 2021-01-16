@@ -15,7 +15,10 @@ EnvHelper::setErrorVisibleFromEnv();
 $container = Container::getInstance();
 $kernel = new Kernel('web');
 $kernel->setContainer($container);
-$kernel->setLoader(new ContainerConfigLoader(__DIR__ . '/../../config/extra/importContainer.php'));
+$kernel->setLoader(new ContainerConfigLoader([
+//    __DIR__ . '/../../config/extra/importContainer.php',
+    __DIR__ . '/../../vendor/znsandbox/sandbox/src/Apache/Domain/config/container.php',
+]));
 $kernel->setLoader(new RoutingConfigLoader([
     __DIR__ . '/../../vendor/znsandbox/sandbox/src/Apache/Symfony4/Web/config/routing.php',
 ]));
