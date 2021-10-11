@@ -1,0 +1,65 @@
+version: "3"
+
+networks:
+      - tournament-network
+
+services:
+  db:
+    image: postgres:10.1
+    container_name: postgresql.test
+    restart: unless-stopped
+    environment:
+        - POSTGRES_HOST_AUTH_METHOD=trust
+        - POSTGRES_DB=${DB_DEFAULT_DATABASE}
+        - POSTGRES_USER=${DB_DEFAULT_USERNAME}
+        - POSTGRES_PASSWORD=${DB_DEFAULT_PASSWORD}
+    ports:
+        - "${DB_PORT:-5432}:5432"
+    volumes:
+        - ./data/db:/var/lib/postgresql/data
+    networks:
+      - tournament-network
+      
+  apache:
+    image: httpd:2.4
+    container_name: tournament-server
+    volumes:
+      - .:/var/www/html
+      - /var/www/html/vendor
+      - .docker/apache/httpd.conf:/usr/local/apache2/conf/httpd.conf
+    depends_on:
+      - php
+    networks:
+      - tournament-network
+    ports:
+      - 80:80
+
+  php:
+    container_name: php-fpm
+    image: tournament-php
+    build:
+      context: .
+    volumes:
+      - .:/var/www/html
+      - /var/www/html/vendor
+    ports:
+      - 9000:9000
+    restart: unless-stopped
+    networks:
+      - tournament-network
+    depends_on:
+      - db
+    links:
+      - db
+
+  migrationsandfixtures:
+    image: tournament-php
+    depends_on:
+      - db
+    entrypoint: sh -c "sleep 30 && php /var/www/html/vendor/zncore/base/bin/zn db:migrate:up --withConfirm 0 &&  php /var/www/html/vendor/zncore/base/bin/zn db:fixture:import --withConfirm 0 && php /var/www/html/init --env=Development --overwrite=All "
+    networks:
+      - tournament-network
+
+networks:
+  tournament-network:
+    driver: bridge 

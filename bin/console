@@ -1,0 +1,22 @@
+#!/usr/bin/env php
+<?php
+
+use ZnCore\Base\Legacy\Yii\Helpers\ArrayHelper;
+use ZnCore\Base\Libs\App\Factories\ApplicationFactory;
+use ZnCore\Base\Libs\App\Factories\KernelFactory;
+
+require __DIR__ . '/../vendor/autoload.php';
+
+\ZnCore\Base\Helpers\DeprecateHelper::hardThrow();
+
+$bundles = [
+    new \ZnLib\Fixture\Bundle(['container', 'console']),
+    new \ZnLib\Db\Bundle(['container', 'console']),
+    new \ZnLib\Migration\Bundle(['container', 'console']),
+    new \ZnTool\Package\Bundle(['container', 'console']),
+    new \ZnTool\Phar\Bundle(['container', 'console']),
+];
+$bundles = ArrayHelper::merge($bundles, include __DIR__ . '/../config/bundle.php');
+$kernel = KernelFactory::createConsoleKernel($bundles, ['i18next', 'container', 'console', 'migration', 'symfonyRpc']);
+$application = ApplicationFactory::createConsole($kernel);
+$application->run();

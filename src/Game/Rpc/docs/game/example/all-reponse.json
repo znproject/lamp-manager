@@ -1,0 +1,112 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "body": [
+        {
+          "id": 1,
+          "categoryId": 1,
+          "title": "Дурак",
+          "description": null,
+          "statusId": 100,
+          "createdAt": "2021-08-19 17:06:19",
+          "logo": "http://localhost/uploads/13/8b/8c/67/c0/E4uMZ8A2JUBDzf34aVz-_T2o8PIatcSHr643s5oyV7MMzcwNg.jpg",
+          "link": "http://localhost/game/fool",
+          "partnerId": 1
+      },
+      {
+          "id": 2,
+          "categoryId": 1,
+          "title": "Нарды",
+          "description": null,
+          "statusId": 100,
+          "createdAt": "2021-08-19 17:06:19",
+          "logo": "http://localhost/uploads/13/8b/8c/67/c0/E4uMZ8A2JUBDzf34aVz-_T2o8PIatcSHr643s5oyV7MMzcwNg.jpg",
+          "link": "http://localhost/game/backgammon",
+          "partnerId": 1
+      },
+      {
+          "id": 3,
+          "categoryId": 1,
+          "title": "Шашки",
+          "description": null,
+          "statusId": 100,
+          "createdAt": "2021-08-19 17:06:19",
+          "logo": "http://localhost/uploads/13/8b/8c/67/c0/E4uMZ8A2JUBDzf34aVz-_T2o8PIatcSHr643s5oyV7MMzcwNg.jpg",
+          "link": "http://localhost/game/сheckers",
+          "partnerId": 1
+      },
+      {
+          "id": 4,
+          "categoryId": 1,
+          "title": "Шахматы",
+          "description": null,
+          "statusId": 100,
+          "createdAt": "2021-08-19 17:06:19",
+          "logo": "http://localhost/uploads/13/8b/8c/67/c0/E4uMZ8A2JUBDzf34aVz-_T2o8PIatcSHr643s5oyV7MMzcwNg.jpg",
+          "link": "http://localhost/game/chess",
+          "partnerId": 1
+      },
+      {
+          "id": 5,
+          "categoryId": 2,
+          "title": "Рулетка",
+          "description": null,
+          "statusId": 100,
+          "createdAt": "2021-08-19 17:06:19",
+          "logo": "http://localhost/uploads/13/8b/8c/67/c0/E4uMZ8A2JUBDzf34aVz-_T2o8PIatcSHr643s5oyV7MMzcwNg.jpg",
+          "link": "http://localhost/game/roulette",
+          "partnerId": 1
+      },
+      {
+          "id": 6,
+          "categoryId": 2,
+          "title": "Покер",
+          "description": null,
+          "statusId": 100,
+          "createdAt": "2021-08-19 17:06:19",
+          "logo": "http://localhost/uploads/13/8b/8c/67/c0/E4uMZ8A2JUBDzf34aVz-_T2o8PIatcSHr643s5oyV7MMzcwNg.jpg",
+          "link": "http://localhost/game/poker",
+          "partnerId": 1
+      },
+      {
+          "id": 7,
+          "categoryId": 3,
+          "title": "Кано",
+          "description": null,
+          "statusId": 100,
+          "createdAt": "2021-08-19 17:06:19",
+          "logo": "http://localhost/uploads/13/8b/8c/67/c0/E4uMZ8A2JUBDzf34aVz-_T2o8PIatcSHr643s5oyV7MMzcwNg.jpg",
+          "link": "http://localhost/game/kano",
+          "partnerId": 1
+      },
+      {
+          "id": 8,
+          "categoryId": 3,
+          "title": "Fruit Cocktail",
+          "description": null,
+          "statusId": 100,
+          "createdAt": "2021-08-19 17:06:19",
+          "logo": "http://localhost/uploads/13/8b/8c/67/c0/E4uMZ8A2JUBDzf34aVz-_T2o8PIatcSHr643s5oyV7MMzcwNg.jpg",
+          "link": "http://localhost/game/fruit_cocktail",
+          "partnerId": 1
+      },
+      {
+          "id": 9,
+          "categoryId": 3,
+          "title": "Crazy Monkey",
+          "description": null,
+          "statusId": 100,
+          "createdAt": "2021-08-19 17:06:19",
+          "logo": "http://localhost/uploads/13/8b/8c/67/c0/E4uMZ8A2JUBDzf34aVz-_T2o8PIatcSHr643s5oyV7MMzcwNg.jpg",
+          "link": "http://localhost/game/crazy_monkey",
+          "partnerId": 1
+      }
+    ],
+    "meta": {
+      "perPage": 20,
+      "totalCount": 2,
+      "page": 1,
+      "timestamp": "2021-08-09T14:37:08+0000"
+    }
+  }
+}

@@ -1,0 +1,83 @@
+<?php
+
+return [
+	'deps' => [
+		'storage_service',
+		'user_identity',
+		'storage_file',
+	],
+	'collection' => [
+		[
+			'id' => 1,
+			'service_id' => 1,
+			'entity_id' => 1,
+			'user_id' => 1,
+			'file_id' => 1,
+			'created_at' => '2021-08-27 08:43:22',
+		],
+		[
+			'id' => 2,
+			'service_id' => 1,
+			'entity_id' => 1,
+			'user_id' => 1,
+			'file_id' => 2,
+			'created_at' => '2021-08-27 08:45:11',
+		],
+		[
+			'id' => 3,
+			'service_id' => 1,
+			'entity_id' => 1,
+			'user_id' => 1,
+			'file_id' => 3,
+			'created_at' => '2021-08-27 08:45:17',
+		],
+		[
+			'id' => 4,
+			'service_id' => 1,
+			'entity_id' => 2,
+			'user_id' => 1,
+			'file_id' => 4,
+			'created_at' => '2021-08-27 08:45:22',
+		],
+		[
+			'id' => 5,
+			'service_id' => 1,
+			'entity_id' => 2,
+			'user_id' => 1,
+			'file_id' => 5,
+			'created_at' => '2021-08-27 08:45:34',
+		],
+		[
+			'id' => 6,
+			'service_id' => 1,
+			'entity_id' => 2,
+			'user_id' => 1,
+			'file_id' => 6,
+			'created_at' => '2021-08-27 08:45:43',
+		],
+		[
+			'id' => 7,
+			'service_id' => 1,
+			'entity_id' => 3,
+			'user_id' => 1,
+			'file_id' => 7,
+			'created_at' => '2021-08-27 08:45:57',
+		],
+		[
+			'id' => 8,
+			'service_id' => 1,
+			'entity_id' => 3,
+			'user_id' => 1,
+			'file_id' => 8,
+			'created_at' => '2021-08-27 08:46:02',
+		],
+		[
+			'id' => 9,
+			'service_id' => 1,
+			'entity_id' => 3,
+			'user_id' => 1,
+			'file_id' => 9,
+			'created_at' => '2021-08-27 08:46:11',
+		],
+	],
+];

@@ -1,0 +1,47 @@
+[
+	{
+		"id": 1,
+		"amount": "406",
+		"identityId": 1,
+		"currencyId": 1,
+		"createdAt": "2021-08-05 18:06:17",
+		"currency": {
+			"id": 1,
+			"countryId": 1894,
+			"code": "398",
+			"char": "KZT",
+			"title": "Тенге",
+			"description": ""
+		}
+	},
+	{
+		"id": 2,
+		"amount": "0",
+		"identityId": 1,
+		"currencyId": 2,
+		"createdAt": "2021-08-05 18:06:17",
+		"currency": {
+			"id": 2,
+			"countryId": 1894,
+			"code": "643",
+			"char": "RUB",
+			"title": "Российский рубль",
+			"description": ""
+		}
+	},
+	{
+		"id": 3,
+		"amount": "0",
+		"identityId": 1,
+		"currencyId": 3,
+		"createdAt": "2021-08-05 18:06:17",
+		"currency": {
+			"id": 3,
+			"countryId": 1894,
+			"code": "USD",
+			"char": "840",
+			"title": "Доллар США",
+			"description": ""
+		}
+	}
+]

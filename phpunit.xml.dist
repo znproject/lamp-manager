@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit
+        bootstrap="tests/bootstrap.php"
+        colors="true"
+        resolveDependencies="true"
+        beStrictAboutTestsThatDoNotTestAnything="false"
+>
+    <testsuites>
+        <testsuite name="Project Test Suite">
+            <directory>tests/</directory>
+        </testsuite>
+        <testsuite>
+            <directory>vendor/zncore/base</directory>
+        </testsuite>
+        <testsuite>
+            <directory>vendor/znlib/rpc</directory>
+        </testsuite>
+        <testsuite>
+            <directory>vendor/znkaz/egov</directory>
+        </testsuite>
+        <testsuite>
+            <directory>vendor/znkaz/iin</directory>
+        </testsuite>
+        <testsuite>
+            <directory>vendor/znlib/qr-box</directory>
+        </testsuite>
+        <testsuite>
+            <directory>vendor/zncrypt/pki</directory>
+        </testsuite>
+
+        <!--<testsuite>
+            <directory>vendor/znbundle/eav</directory>
+        </testsuite>-->
+
+    </testsuites>
+    <php>
+        <env name="APP_ENV" value="test"/>
+    </php>
+</phpunit>
+

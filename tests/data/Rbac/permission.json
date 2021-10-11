@@ -1,0 +1,821 @@
+[
+	{
+		"id": 5,
+		"type": 2,
+		"name": "oAuthenticationGetTokenByPassword",
+		"title": "Аутентификация. Получение токена по паролю",
+		"description": null
+	},
+	{
+		"id": 6,
+		"type": 2,
+		"name": "oAuthenticationWebLogin",
+		"title": "Аутентификация. Вход в аккаунт",
+		"description": null
+	},
+	{
+		"id": 7,
+		"type": 2,
+		"name": "oAuthenticationWebLogout",
+		"title": "Аутентификация. Выход из аккаунта",
+		"description": null
+	},
+	{
+		"id": 8,
+		"type": 2,
+		"name": "oPersonInfoUpdate",
+		"title": "Персона. Изменение данных",
+		"description": null
+	},
+	{
+		"id": 9,
+		"type": 2,
+		"name": "oPersonInfoOne",
+		"title": "Персона. Чтение данных",
+		"description": null
+	},
+	{
+		"id": 10,
+		"type": 2,
+		"name": "oRestorePasswordRequestActivationCode",
+		"title": "Восстановление пароля. Запроса кода активации",
+		"description": null
+	},
+	{
+		"id": 11,
+		"type": 2,
+		"name": "oRestorePasswordCreatePassword",
+		"title": "Восстановление пароля. Создание пароля",
+		"description": null
+	},
+	{
+		"id": 12,
+		"type": 2,
+		"name": "oUpdatePasswordUpdate",
+		"title": "Изменение пароля",
+		"description": null
+	},
+	{
+		"id": 13,
+		"type": 2,
+		"name": "oValidatePasswordValidate",
+		"title": "Валидация пароля",
+		"description": null
+	},
+	{
+		"id": 14,
+		"type": 2,
+		"name": "oFixtureImport",
+		"title": "Импорт фикстур",
+		"description": null
+	},
+	{
+		"id": 15,
+		"type": 2,
+		"name": "oMainPageView",
+		"title": "Доступ на главную страницу",
+		"description": null
+	},
+	{
+		"id": 16,
+		"type": 2,
+		"name": "oAdminOnly",
+		"title": "Доступ только для админа",
+		"description": null
+	},
+	{
+		"id": 17,
+		"type": 2,
+		"name": "oAdminOnlyAll",
+		"title": "Доступ только для админа. Просмотр списка",
+		"description": null
+	},
+	{
+		"id": 18,
+		"type": 2,
+		"name": "oAdminOnlyOne",
+		"title": "Доступ только для админа. Просмотр записи",
+		"description": null
+	},
+	{
+		"id": 19,
+		"type": 2,
+		"name": "oAdminOnlyCreate",
+		"title": "Доступ только для админа. Создание",
+		"description": null
+	},
+	{
+		"id": 20,
+		"type": 2,
+		"name": "oAdminOnlyUpdate",
+		"title": "Доступ только для админа. Редактирование",
+		"description": null
+	},
+	{
+		"id": 21,
+		"type": 2,
+		"name": "oAdminOnlyDelete",
+		"title": "Доступ только для админа. Удаление",
+		"description": null
+	},
+	{
+		"id": 22,
+		"type": 2,
+		"name": "oApplicationApplicationAll",
+		"title": "Приложения. Просмотр списка",
+		"description": null
+	},
+	{
+		"id": 23,
+		"type": 2,
+		"name": "oApplicationApplicationOne",
+		"title": "Приложения. Просмотр записи",
+		"description": null
+	},
+	{
+		"id": 24,
+		"type": 2,
+		"name": "oApplicationApplicationCreate",
+		"title": "Приложения. Создание",
+		"description": null
+	},
+	{
+		"id": 25,
+		"type": 2,
+		"name": "oApplicationApplicationUpdate",
+		"title": "Приложения. Редактирование",
+		"description": null
+	},
+	{
+		"id": 26,
+		"type": 2,
+		"name": "oApplicationApplicationDelete",
+		"title": "Приложения. Удаление",
+		"description": null
+	},
+	{
+		"id": 27,
+		"type": 2,
+		"name": "oRbacItemAll",
+		"title": "RBAC роли и полномочия. Просмотр списка",
+		"description": null
+	},
+	{
+		"id": 28,
+		"type": 2,
+		"name": "oRbacItemOne",
+		"title": "RBAC роли и полномочия. Просмотр записи",
+		"description": null
+	},
+	{
+		"id": 29,
+		"type": 2,
+		"name": "oRbacItemCreate",
+		"title": "RBAC роли и полномочия. Создание",
+		"description": null
+	},
+	{
+		"id": 30,
+		"type": 2,
+		"name": "oRbacItemUpdate",
+		"title": "RBAC роли и полномочия. Редактирование",
+		"description": null
+	},
+	{
+		"id": 31,
+		"type": 2,
+		"name": "oRbacItemDelete",
+		"title": "RBAC роли и полномочия. Удаление",
+		"description": null
+	},
+	{
+		"id": 32,
+		"type": 2,
+		"name": "oRbacDocAll",
+		"title": "Документация RPC. Просмотр списка",
+		"description": null
+	},
+	{
+		"id": 33,
+		"type": 2,
+		"name": "oRbacDocOne",
+		"title": "Документация RPC. Просмотр записи",
+		"description": null
+	},
+	{
+		"id": 34,
+		"type": 2,
+		"name": "oRbacDocDownload",
+		"title": "Документация RPC. Скачать",
+		"description": null
+	},
+	{
+		"id": 35,
+		"type": 2,
+		"name": "oUserIdentityAll",
+		"title": "Пользователи. Просмотр списка",
+		"description": null
+	},
+	{
+		"id": 36,
+		"type": 2,
+		"name": "oUserIdentityOne",
+		"title": "Пользователи. Просмотр записи",
+		"description": null
+	},
+	{
+		"id": 37,
+		"type": 2,
+		"name": "oUserIdentityCreate",
+		"title": "Пользователи. Создание",
+		"description": null
+	},
+	{
+		"id": 38,
+		"type": 2,
+		"name": "oUserIdentityUpdate",
+		"title": "Пользователи. Редактирование",
+		"description": null
+	},
+	{
+		"id": 39,
+		"type": 2,
+		"name": "oUserIdentityDelete",
+		"title": "Пользователи. Удаление",
+		"description": null
+	},
+	{
+		"id": 40,
+		"type": 2,
+		"name": "oRbacAssignmentAttach",
+		"title": "RBAC назначения полномочий. Прикрепить полномочие",
+		"description": null
+	},
+	{
+		"id": 41,
+		"type": 2,
+		"name": "oRbacAssignmentDetach",
+		"title": "RBAC назначения полномочий. Открепить полномочие",
+		"description": null
+	},
+	{
+		"id": 42,
+		"type": 2,
+		"name": "oRbacAssignmentAllRoles",
+		"title": "RBAC назначения полномочий. Получить все роли пользователя",
+		"description": null
+	},
+	{
+		"id": 43,
+		"type": 2,
+		"name": "oRpcSettingsView",
+		"title": "Настройки системы. Получить",
+		"description": null
+	},
+	{
+		"id": 44,
+		"type": 2,
+		"name": "oRpcSettingsUpdate",
+		"title": "Настройки системы. Изменить",
+		"description": null
+	},
+	{
+		"id": 45,
+		"type": 2,
+		"name": "oLanguageCurrentSwitch",
+		"title": "Текущий язык. Переключить",
+		"description": null
+	},
+	{
+		"id": 46,
+		"type": 2,
+		"name": "oDashboardAll",
+		"title": "Главная страница. Просмотр",
+		"description": null
+	},
+	{
+		"id": 47,
+		"type": 2,
+		"name": "oRegistrationRequestActivationCode",
+		"title": "Запросить код активации",
+		"description": null
+	},
+	{
+		"id": 48,
+		"type": 2,
+		"name": "oRegistrationCreateAccount",
+		"title": "Создать аккаунт",
+		"description": null
+	},
+	{
+		"id": 49,
+		"type": 2,
+		"name": "oPersonMyPersonUpdate",
+		"title": "Моя персона. Изменение данных",
+		"description": null
+	},
+	{
+		"id": 50,
+		"type": 2,
+		"name": "oPersonMyPersonOne",
+		"title": "Моя персона. Чтение данных",
+		"description": null
+	},
+	{
+		"id": 51,
+		"type": 2,
+		"name": "oPersonMyContactAll",
+		"title": "Мои контакты. Просмотр списка",
+		"description": null
+	},
+	{
+		"id": 52,
+		"type": 2,
+		"name": "oPersonMyContactOne",
+		"title": "Мои контакты. Просмотр записи",
+		"description": null
+	},
+	{
+		"id": 53,
+		"type": 2,
+		"name": "oPersonMyContactCreate",
+		"title": "Мои контакты. Создание",
+		"description": null
+	},
+	{
+		"id": 54,
+		"type": 2,
+		"name": "oPersonMyContactUpdate",
+		"title": "Мои контакты. Редактирование",
+		"description": null
+	},
+	{
+		"id": 55,
+		"type": 2,
+		"name": "oPersonMyContactDelete",
+		"title": "Мои контакты. Удаление",
+		"description": null
+	},
+	{
+		"id": 56,
+		"type": 2,
+		"name": "oPersonMyChildAll",
+		"title": "Мои дети. Просмотр списка",
+		"description": null
+	},
+	{
+		"id": 57,
+		"type": 2,
+		"name": "oPersonMyChildOne",
+		"title": "Мои дети. Просмотр записи",
+		"description": null
+	},
+	{
+		"id": 58,
+		"type": 2,
+		"name": "oPersonMyChildCreate",
+		"title": "Мои дети. Создание",
+		"description": null
+	},
+	{
+		"id": 59,
+		"type": 2,
+		"name": "oPersonMyChildUpdate",
+		"title": "Мои дети. Редактирование",
+		"description": null
+	},
+	{
+		"id": 60,
+		"type": 2,
+		"name": "oPersonMyChildDelete",
+		"title": "Мои дети. Удаление",
+		"description": null
+	},
+	{
+		"id": 61,
+		"type": 2,
+		"name": "oGeoCountryAll",
+		"title": "Страна. Просмотр списка",
+		"description": null
+	},
+	{
+		"id": 62,
+		"type": 2,
+		"name": "oGeoCountryOne",
+		"title": "Страна. Просмотр записи",
+		"description": null
+	},
+	{
+		"id": 63,
+		"type": 2,
+		"name": "oGeoCountryCreate",
+		"title": "Страна. Создание",
+		"description": null
+	},
+	{
+		"id": 64,
+		"type": 2,
+		"name": "oGeoCountryUpdate",
+		"title": "Страна. Редактирование",
+		"description": null
+	},
+	{
+		"id": 65,
+		"type": 2,
+		"name": "oGeoCountryDelete",
+		"title": "Страна. Удаление",
+		"description": null
+	},
+	{
+		"id": 66,
+		"type": 2,
+		"name": "oGeoCurrencyAll",
+		"title": "Валюта. Просмотр списка",
+		"description": null
+	},
+	{
+		"id": 67,
+		"type": 2,
+		"name": "oGeoCurrencyOne",
+		"title": "Валюта. Просмотр записи",
+		"description": null
+	},
+	{
+		"id": 68,
+		"type": 2,
+		"name": "oGeoCurrencyCreate",
+		"title": "Валюта. Создание",
+		"description": null
+	},
+	{
+		"id": 69,
+		"type": 2,
+		"name": "oGeoCurrencyUpdate",
+		"title": "Валюта. Редактирование",
+		"description": null
+	},
+	{
+		"id": 70,
+		"type": 2,
+		"name": "oGeoCurrencyDelete",
+		"title": "Валюта. Удаление",
+		"description": null
+	},
+	{
+		"id": 71,
+		"type": 2,
+		"name": "oGeoLocalityAll",
+		"title": "Населенный пункт. Просмотр списка",
+		"description": null
+	},
+	{
+		"id": 72,
+		"type": 2,
+		"name": "oGeoLocalityOne",
+		"title": "Населенный пункт. Просмотр записи",
+		"description": null
+	},
+	{
+		"id": 73,
+		"type": 2,
+		"name": "oGeoLocalityCreate",
+		"title": "Населенный пункт. Создание",
+		"description": null
+	},
+	{
+		"id": 74,
+		"type": 2,
+		"name": "oGeoLocalityUpdate",
+		"title": "Населенный пункт. Редактирование",
+		"description": null
+	},
+	{
+		"id": 75,
+		"type": 2,
+		"name": "oGeoLocalityDelete",
+		"title": "Населенный пункт. Удаление",
+		"description": null
+	},
+	{
+		"id": 76,
+		"type": 2,
+		"name": "oGeoRegionAll",
+		"title": "Регион. Просмотр списка",
+		"description": null
+	},
+	{
+		"id": 77,
+		"type": 2,
+		"name": "oGeoRegionOne",
+		"title": "Регион. Просмотр записи",
+		"description": null
+	},
+	{
+		"id": 78,
+		"type": 2,
+		"name": "oGeoRegionCreate",
+		"title": "Регион. Создание",
+		"description": null
+	},
+	{
+		"id": 79,
+		"type": 2,
+		"name": "oGeoRegionUpdate",
+		"title": "Регион. Редактирование",
+		"description": null
+	},
+	{
+		"id": 80,
+		"type": 2,
+		"name": "oGeoRegionDelete",
+		"title": "Регион. Удаление",
+		"description": null
+	},
+	{
+		"id": 81,
+		"type": 2,
+		"name": "oIinGetInfo",
+		"title": "Получить инфо об ИИН",
+		"description": null
+	},
+	{
+		"id": 82,
+		"type": 2,
+		"name": "oPersonContactTypeAll",
+		"title": "Тип контакта. Просмотр списка",
+		"description": null
+	},
+	{
+		"id": 83,
+		"type": 2,
+		"name": "oPersonContactTypeOne",
+		"title": "Тип контакта. Просмотр записи",
+		"description": null
+	},
+	{
+		"id": 84,
+		"type": 2,
+		"name": "oPersonContactTypeCreate",
+		"title": "Тип контакта. Создание",
+		"description": null
+	},
+	{
+		"id": 85,
+		"type": 2,
+		"name": "oPersonContactTypeUpdate",
+		"title": "Тип контакта. Редактирование",
+		"description": null
+	},
+	{
+		"id": 86,
+		"type": 2,
+		"name": "oPersonContactTypeDelete",
+		"title": "Тип контакта. Удаление",
+		"description": null
+	},
+	{
+		"id": 87,
+		"type": 2,
+		"name": "oGameCategoryAll",
+		"title": null,
+		"description": null
+	},
+	{
+		"id": 88,
+		"type": 2,
+		"name": "oGameCategoryOne",
+		"title": null,
+		"description": null
+	},
+	{
+		"id": 89,
+		"type": 2,
+		"name": "oGameGameAll",
+		"title": null,
+		"description": null
+	},
+	{
+		"id": 90,
+		"type": 2,
+		"name": "oGameGameOne",
+		"title": null,
+		"description": null
+	},
+	{
+		"id": 91,
+		"type": 2,
+		"name": "oGamePartnerAll",
+		"title": null,
+		"description": null
+	},
+	{
+		"id": 92,
+		"type": 2,
+		"name": "oGamePartnerOne",
+		"title": null,
+		"description": null
+	},
+	{
+		"id": 93,
+		"type": 2,
+		"name": "oMoneyWalletAll",
+		"title": null,
+		"description": null
+	},
+	{
+		"id": 94,
+		"type": 2,
+		"name": "oMoneyTransactionAll",
+		"title": null,
+		"description": null
+	},
+	{
+		"id": 95,
+		"type": 2,
+		"name": "oMoneyTransactionOne",
+		"title": null,
+		"description": null
+	},
+	{
+		"id": 96,
+		"type": 2,
+		"name": "oMoneyTransferTransfer",
+		"title": null,
+		"description": null
+	},
+	{
+		"id": 97,
+		"type": 2,
+		"name": "oMoneyIssueIssue",
+		"title": null,
+		"description": null
+	},
+	{
+		"id": 98,
+		"type": 2,
+		"name": "oGameCategoryCreate",
+		"title": null,
+		"description": null
+	},
+	{
+		"id": 99,
+		"type": 2,
+		"name": "oGameCategoryUpdate",
+		"title": null,
+		"description": null
+	},
+	{
+		"id": 100,
+		"type": 2,
+		"name": "oGameCategoryDelete",
+		"title": null,
+		"description": null
+	},
+	{
+		"id": 101,
+		"type": 2,
+		"name": "oGameGameCreate",
+		"title": null,
+		"description": null
+	},
+	{
+		"id": 102,
+		"type": 2,
+		"name": "oGameGameUpdate",
+		"title": null,
+		"description": null
+	},
+	{
+		"id": 103,
+		"type": 2,
+		"name": "oGameGameDelete",
+		"title": null,
+		"description": null
+	},
+	{
+		"id": 104,
+		"type": 2,
+		"name": "oGamePartnerCreate",
+		"title": null,
+		"description": null
+	},
+	{
+		"id": 105,
+		"type": 2,
+		"name": "oGamePartnerUpdate",
+		"title": null,
+		"description": null
+	},
+	{
+		"id": 106,
+		"type": 2,
+		"name": "oGamePartnerDelete",
+		"title": null,
+		"description": null
+	},
+	{
+		"id": 107,
+		"type": 2,
+		"name": "oTournamentTournamentAll",
+		"title": null,
+		"description": null
+	},
+	{
+		"id": 108,
+		"type": 2,
+		"name": "oTournamentTournamentOne",
+		"title": null,
+		"description": null
+	},
+	{
+		"id": 109,
+		"type": 2,
+		"name": "oTournamentTournamentCreate",
+		"title": null,
+		"description": null
+	},
+	{
+		"id": 110,
+		"type": 2,
+		"name": "oTournamentTournamentUpdate",
+		"title": null,
+		"description": null
+	},
+	{
+		"id": 111,
+		"type": 2,
+		"name": "oTournamentTournamentDelete",
+		"title": null,
+		"description": null
+	},
+	{
+		"id": 112,
+		"type": 2,
+		"name": "oTournamentScrambleAll",
+		"title": null,
+		"description": null
+	},
+	{
+		"id": 113,
+		"type": 2,
+		"name": "oTournamentScrambleOne",
+		"title": null,
+		"description": null
+	},
+	{
+		"id": 114,
+		"type": 2,
+		"name": "oTournamentScrambleCreate",
+		"title": null,
+		"description": null
+	},
+	{
+		"id": 115,
+		"type": 2,
+		"name": "oTournamentScrambleUpdate",
+		"title": null,
+		"description": null
+	},
+	{
+		"id": 116,
+		"type": 2,
+		"name": "oTournamentScrambleDelete",
+		"title": null,
+		"description": null
+	},
+	{
+		"id": 117,
+		"type": 2,
+		"name": "oTournamentSubscriptionAll",
+		"title": null,
+		"description": null
+	},
+	{
+		"id": 118,
+		"type": 2,
+		"name": "oTournamentSubscriptionOne",
+		"title": null,
+		"description": null
+	},
+	{
+		"id": 119,
+		"type": 2,
+		"name": "oTournamentSubscriptionCreate",
+		"title": null,
+		"description": null
+	},
+	{
+		"id": 120,
+		"type": 2,
+		"name": "oTournamentSubscriptionUpdate",
+		"title": null,
+		"description": null
+	},
+	{
+		"id": 121,
+		"type": 2,
+		"name": "oTournamentSubscriptionDelete",
+		"title": null,
+		"description": null
+	}
+]

@@ -1,0 +1,23 @@
+{
+  "jsonrpc": "2.0",
+  "method": "game.update",
+  "params": {
+    "meta": {
+      "version": 1,
+      "Language":"ru",
+      "timestamp": "2021-05-26T15:59:16+0000",
+      "Authorization": "bearer .>;cyLLOrzElzq<{9%^I@nxZByH0@6:{%3&es*~`au6Qlv<bDj<jyn=<(o^~5mJd"
+    },
+    "body": {
+        "id": 10,
+        "categoryId": 1,
+        "title": "Тестовая игра 2",
+        "description": "Описание тестовой игры",
+        "statusId": 100,
+        "createdAt": "2021-09-28 05:14:43",
+        "logo": "http://localhost/uploads/13/8b/8c/67/c0/E4uMZ8A2JUBDzf34aVz-_T2o8PIatcSHr643s5oyV7MMzcwNg.jpg",
+        "link": "http://localhost/test",
+        "partnerId": 1
+    }
+  }
+}

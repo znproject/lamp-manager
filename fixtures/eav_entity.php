@@ -1,0 +1,81 @@
+<?php
+
+return [
+	'deps' => [
+		'eav_category',
+	],
+	'collection' => [
+		[
+			'id' => 1,
+			'category_id' => 1,
+			'name' => 'personContact',
+			'title' => 'Контакты',
+			'handler' => null,
+			'status' => 100,
+		],
+		[
+			'id' => 2,
+			'category_id' => 1,
+			'name' => 'personInfo',
+			'title' => 'Персона',
+			'handler' => null,
+			'status' => 100,
+		],
+		[
+			'id' => 3,
+			'category_id' => 2,
+			'name' => 'security_rpc_transport',
+			'title' => 'Безопасность RPC',
+			'handler' => null,
+			'status' => 100,
+		],
+		[
+			'id' => 4,
+			'category_id' => 1,
+			'name' => 'person_document',
+			'title' => 'Документы',
+			'handler' => null,
+			'status' => 100,
+		],
+		[
+			'id' => 5,
+			'category_id' => 1,
+			'name' => 'personAddress',
+			'title' => 'Адрес',
+			'handler' => null,
+			'status' => 100,
+		],
+		[
+			'id' => 6,
+			'category_id' => 1,
+			'name' => 'personIdentityCard',
+			'title' => 'Удостоверение',
+			'handler' => null,
+			'status' => 100,
+		],
+		[
+			'id' => 7,
+			'category_id' => 1,
+			'name' => 'personBirthCertificate',
+			'title' => 'Свидетельство о рождении',
+			'handler' => null,
+			'status' => 100,
+		],
+		[
+			'id' => 8,
+			'category_id' => 1,
+			'name' => 'personPassport',
+			'title' => 'Паспорт',
+			'handler' => null,
+			'status' => 100,
+		],
+		[
+			'id' => 9,
+			'category_id' => 3,
+			'name' => 'сontactOrganization',
+			'title' => 'Контакты организации',
+			'handler' => null,
+			'status' => 100,
+		],
+	],
+];

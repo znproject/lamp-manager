@@ -1,0 +1,55 @@
+#%RAML 1.0
+title: Tournament JSON-RPC
+description: !include ../../vendor/zndoc/rpc/src/description.md
+protocols: [ HTTP, HTTPS ]
+#baseUri: http://api.example.com/v1
+mediaType: [ application/json ]
+securitySchemes: !include ../../vendor/zndoc/rpc/src/securitySchemes/index.raml
+#traits: !include ../../vendor/zndoc/rpc/src/traits/index.raml
+
+# Приложение
+
+#/application: !include ../../vendor/znsandbox/sandbox/src/Application/Rpc/docs/application/api.raml
+#/apiKey: !include ../../vendor/znsandbox/sandbox/src/Application/Rpc/docs/apiKey/api.raml
+
+# Пользователь системы
+
+/authentication: !include ../../vendor/znbundle/user/src/Rpc/docs/authentication/api.raml
+#/user: !include ../../vendor/znbundle/user/src/Rpc/docs/user/api.raml
+/userRegistration: !include ../../vendor/znuser/registration/src/Rpc/docs/registration/api.raml
+
+# Баланс
+
+/moneyTransaction: !include ../../src/Money/Rpc/docs/transaction/api.raml
+/moneyTransfer: !include ../../src/Money/Rpc/docs/transfer/api.raml
+/moneyWallet: !include ../../src/Money/Rpc/docs/wallet/api.raml
+
+# Игры
+
+/gameCategory: !include ../../src/Game/Rpc/docs/category/api.raml
+/gamePartner: !include ../../src/Game/Rpc/docs/partner/api.raml
+/game: !include ../../src/Game/Rpc/docs/game/api.raml
+
+# Безопасность
+
+/restorePassword: !include ../../vendor/znuser/password/src/Rpc/docs/restorePassword/api.raml
+#/updatePassword: !include ../../vendor/znsandbox/sandbox/src/UserSecurity/Rpc/docs/updatePassword/api.raml
+
+# RPC
+
+#/rpcSettings: !include ../../vendor/znsandbox/sandbox/src/Rpc/Rpc/docs/settings/api.raml
+
+# Распредение полномочий
+
+#/rbacAssignment: !include ../../vendor/znsandbox/sandbox/src/Casbin/Rpc/docs/assignment/api.raml
+#/rbacRole: !include ../../vendor/znsandbox/sandbox/src/Casbin/Rpc/docs/role/api.raml
+#/rbacPermission: !include ../../vendor/znsandbox/sandbox/src/Casbin/Rpc/docs/permission/api.raml
+
+# Персональные данные
+
+#/personInfo: !include ../../vendor/znsandbox/sandbox/src/Person/Rpc/docs/info/api.raml
+#/personAddress: !include ../../vendor/znsandbox/sandbox/src/Person/Rpc/docs/address/api.raml
+#/personBirthCertificate: !include ../../vendor/znsandbox/sandbox/src/Person/Rpc/docs/birthCertificate/api.raml
+#/personContact: !include ../../vendor/znsandbox/sandbox/src/Person/Rpc/docs/contact/api.raml
+#/personIdentityCard: !include ../../vendor/znsandbox/sandbox/src/Person/Rpc/docs/identityCard/api.raml
+#/personPassport: !include ../../vendor/znsandbox/sandbox/src/Person/Rpc/docs/passport/api.raml

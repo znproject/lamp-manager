@@ -1,0 +1,9 @@
+
+#toast-container > div {
+    width: 400px !important;
+}
+
+#toast-container > .toast {
+    border: 0px !important;
+    max-width: 530px; !important;
+}

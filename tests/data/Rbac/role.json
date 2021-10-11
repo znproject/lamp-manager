@@ -1,0 +1,30 @@
+[
+	{
+		"id": 1,
+		"type": 1,
+		"name": "rGuest",
+		"title": "Гость системы",
+		"description": null
+	},
+	{
+		"id": 2,
+		"type": 1,
+		"name": "rUser",
+		"title": "Идентифицированный пользователь",
+		"description": null
+	},
+	{
+		"id": 3,
+		"type": 1,
+		"name": "rAdministrator",
+		"title": "Администратор системы",
+		"description": null
+	},
+	{
+		"id": 4,
+		"type": 1,
+		"name": "rMoneyIssuer",
+		"title": "Эмитент денежных средств",
+		"description": null
+	}
+]
