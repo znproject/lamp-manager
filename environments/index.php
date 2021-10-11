@@ -28,21 +28,32 @@
  * ];
  * ```
  */
-return [
-    'Development' => [
-        'path' => 'dev',
-        'setWritable' => [
-            //'backend/web/assets',
-            'frontend/web/assets',
-            'common/runtime',
-        ],
-        'setExecutable' => [
-            'yii',
-            'yii_test',
-        ],
-        'setCookieValidationKey' => [
-            '.env.local',
-            '.env.test',
-        ],
+
+$commonConfig = [
+    'setWritable' => [
+        'var',
+        'public/uploads',
     ],
+    'setExecutable' => [
+        'bin'
+    ],
+    'random' => [
+        '.env.local',
+        '.env.test',
+    ],
+    /*'setCookieValidationKey' => [
+        '.env.local',
+    ],*/
+];
+
+return [
+    'Development' => array_merge($commonConfig, [
+        'path' => 'dev',
+    ]),
+    'Testing' => array_merge($commonConfig, [
+        'path' => 'testing',
+    ]),
+    'Ci' => array_merge($commonConfig, [
+        'path' => 'ci',
+    ]),
 ];

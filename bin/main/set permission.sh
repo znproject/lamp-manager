@@ -1,7 +1,7 @@
 #!/bin/sh
 
 cd ../..
-sudo chmod -R a+rw common/runtime
-sudo chmod -R a+rw frontend/web/assets
-sudo chmod -R a+rw public/web/assets
+sudo chmod -R a+rw var
+sudo chmod -R a+rw .env*
+sudo chmod -R a+rw public/uploads
 ls -l

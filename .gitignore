@@ -1,3 +1,7 @@
+#docker files
+.docker/db
+.docker/apache/server.pem
+.docker/apache/server-key.pem
 
 # netbeans project files
 nbproject
@@ -15,7 +19,6 @@ Thumbs.db
 
 # PHP Storm IDE
 /.idea/*
-!/.idea/codeStyles/
 
 # composer vendor dir
 /vendor
@@ -36,3 +39,5 @@ phpunit.phar
 
 .dbeaver-data-sources.xml
 session/
+
+data/*

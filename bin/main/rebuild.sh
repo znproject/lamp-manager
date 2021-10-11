@@ -5,8 +5,8 @@ cd vendor/znlib/migration/bin
 php console db:migrate:down --withConfirm=0
 # php console db:delete-all-tables --withConfirm=0
 php console db:migrate:up --withConfirm=0
-php console_test db:migrate:down --withConfirm=0
-php console_test db:migrate:up --withConfirm=0
+php console db:migrate:down --withConfirm=0 --env=test
+php console db:migrate:up --withConfirm=0 --env=test
 
 cd ../../../..
 cd vendor/znlib/fixture/bin

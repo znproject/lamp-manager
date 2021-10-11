@@ -1,61 +1,76 @@
 {
-    "name": "yiisoft/yii2-app-advanced",
-    "description": "Yii 2 Advanced Project Template",
-    "keywords": ["yii2", "framework", "advanced", "project template"],
+    "name": "casino/tournament",
+    "description": "Tournament",
     "type": "project",
     "minimum-stability": "dev",
     "require": {
         "php": ">=7.2",
         "ext-intl": "*",
         "ext-json": "*",
-        "illuminate/database": "^6.3",
-        "yiisoft/yii2": "~2.0.14",
-        "yiisoft/yii2-bootstrap": "~2.0.0",
-        "yiisoft/yii2-swiftmailer": "~2.0.0 || ~2.1.0",
-        "znbundle/article": "dev-master",
+        "symfony/form": "^4.4|^5.0",
+        "symfony/mailer": "^4.4|^5.0",
+        "symfony/messenger": "^4.4|^5.0",
+        "symfony/security-csrf": "^4.4|^5.0",
         "znbundle/dashboard": "dev-master",
+        "znbundle/eav": "dev-main",
+        "znbundle/geo": "dev-main",
         "znbundle/language": "dev-master",
+        "znbundle/log": "dev-main",
         "znbundle/messenger": "dev-master",
         "znbundle/notify": "dev-master",
+        "znbundle/person": "dev-main",
         "znbundle/queue": "dev-master",
         "znbundle/rbac": "dev-master",
         "znbundle/reference": "dev-master",
         "znbundle/storage": "dev-master",
+        "znbundle/summary": "dev-main",
         "znbundle/user": "dev-master",
-        "zncore/domain": "dev-master",
         "zncrypt/jwt": "dev-master",
         "zncrypt/pki": "dev-master",
-        "zncrypt/tunnel": "dev-master",
+        "znfork/casbin": "dev-master",
+        "znkaz/base": "dev-main",
+        "znkaz/eds": "dev-master",
+        "znkaz/egov": "dev-develop",
+        "znkaz/iin": "dev-master",
         "znlib/console": "dev-master",
         "znlib/db": "dev-master",
         "znlib/fixture": "dev-master",
         "znlib/init": "dev-master",
         "znlib/migration": "dev-master",
-        "znlib/rest": "dev-master",
+        "znlib/rpc": "dev-main",
         "znlib/socket": "dev-master",
         "znlib/web": "dev-master",
         "znsandbox/sandbox": "dev-master",
-        "znyii/app": "dev-master",
-        "znyii/base": "dev-master",
-        "znyii/error": "dev-master"
+        "znsymfony/admin-panel": "dev-main",
+        "zntool/deployer": "dev-main",
+        "znuser/identity": "dev-master",
+        "znuser/notify": "dev-master",
+        "znuser/password": "dev-master",
+        "znuser/person": "dev-master",
+        "znuser/rbac": "dev-master",
+        "znuser/registration": "dev-master"
     },
     "require-dev": {
-        "yiisoft/yii2-debug": "~2.1.0",
-        "yiisoft/yii2-gii": "~2.1.0",
-        "yiisoft/yii2-faker": "~2.0.0",
+        "deployer/deployer": "v6.8.0",
+        "fzaninotto/faker": "1.9.x-dev",
+        "symfony/browser-kit": "^4.4|^5.0",
+        "symfony/css-selector": "^4.4|^5.0",
+        "symfony/debug-pack": "*",
+        "symfony/dom-crawler": "^4.4|^5.0",
+        "symfony/http-client": "^4.4|^5.0",
+        "zndoc/rpc": "dev-main",
+        "znlib/telegram": "dev-master",
         "zntool/dev": "dev-master",
-        "zntool/rest-client": "dev-master",
-        "zntool/test": "dev-master",
-        "zntool/package": "dev-master",
         "zntool/generator": "dev-master",
+        "zntool/package": "dev-master",
         "zntool/phar": "dev-master",
+        "zntool/rest-client": "dev-master",
         "zntool/stress": "dev-master",
-        "zndoc/rest-api": "dev-master",
-        "symfony/debug-pack": "*"
+        "zntool/test": "dev-master"
     },
     "autoload": {
         "psr-4": {
-            "Packages\\": "Packages"
+            "App\\": "src/"
         }
     },
     "autoload-dev": {
@@ -64,27 +79,6 @@
         }
     },
     "config": {
-        "sort-packages": true,
-        "fxp-asset": {
-            "enabled": false
-        }
-    },
-    "extra": {
-        "installer-types": [
-            "bower-asset",
-            "npm-asset"
-        ],
-        "installer-paths": {
-            "vendor/{$vendor}/{$name}/": [
-                "type:bower-asset",
-                "type:npm-asset"
-            ]
-        }
-    },
-    "repositories": [
-        {
-            "type": "composer",
-            "url": "https://asset-packagist.org"
-        }
-    ]
+        "sort-packages": true
+    }
 }

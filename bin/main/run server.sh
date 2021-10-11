@@ -1,5 +1,5 @@
 #!/bin/sh
 
-cd ../..
-cd frontend/web
+cd ../../public
+#cd /index.php
 php -S localhost:8001
