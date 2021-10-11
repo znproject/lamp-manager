@@ -24,7 +24,7 @@ App::initVarsFromArray([
     'release_var_path' => '{{release_path}}/var',
     'current_path' => '{{deploy_path}}/current',
 
-    'domain' => 'tournament.casino',
+    'domain' => 'localhost',
 
     'application' => 'mysite',
     'permissions' => [

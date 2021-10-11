@@ -18,7 +18,7 @@ return [
 //    new \ZnBundle\Messenger\Bundle(['all']),
     new \ZnBundle\Language\BundleNew(['all']),
     new \ZnBundle\Summary\Bundle(['all']),
-    new \App\User\Bundle(['all']),
+    new \ZnBundle\User\NewBundle(['all']),
     //new \ZnUser\Registration\Bundle(['all']),
     new \ZnBundle\Queue\Bundle(['all', 'console']),
     new \ZnSandbox\Sandbox\Layout\Bundle(['all']),
