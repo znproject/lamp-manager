@@ -29,8 +29,5 @@ return [
 //    new \App\Person\Bundle(['all']),
     new \ZnSandbox\Sandbox\Rpc\Bundle(['all']),
     new \ZnUser\Notify\Bundle(['all']),
-    new \App\Money\Bundle(['all']),
-    new \App\Game\Bundle(['all']),
-    new \App\Tournament\Bundle(['all']),
     new \ZnSandbox\Sandbox\RpcClient\Bundle(['all']),
 ];

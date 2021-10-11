@@ -1,11 +1,5 @@
 <?php
 
-use App\Game\Domain\Enums\Rbac\GameCategoryPermissionEnum;
-use App\Game\Domain\Enums\Rbac\GameGamePermissionEnum;
-use App\Game\Domain\Enums\Rbac\GamePartnerPermissionEnum;
-use App\Tournament\Domain\Enums\Rbac\TournamentScramblePermissionEnum;
-use App\Tournament\Domain\Enums\Rbac\TournamentSubscriptionPermissionEnum;
-use App\Tournament\Domain\Enums\Rbac\TournamentTournamentPermissionEnum;
 use ZnBundle\Geo\Domain\Enums\Rbac\GeoCountryPermissionEnum;
 use ZnBundle\Geo\Domain\Enums\Rbac\GeoCurrencyPermissionEnum;
 use ZnBundle\Geo\Domain\Enums\Rbac\GeoLocalityPermissionEnum;
@@ -20,11 +14,6 @@ use ZnUser\Registration\Domain\Enums\Rbac\UserRegistrationPermissionEnum;
 use ZnSandbox\Sandbox\Application\Domain\Enums\Rbac\ApplicationPermissionEnum;
 use App\Common\Enums\Rbac\ApplicationRoleEnum;
 use App\Common\Enums\Rbac\CommonPermissionEnum;
-use App\Money\Domain\Enums\Rbac\MoneyIssuePermissionEnum;
-use App\Money\Domain\Enums\Rbac\MoneyRoleEnum;
-use App\Money\Domain\Enums\Rbac\MoneyTransactionPermissionEnum;
-use App\Money\Domain\Enums\Rbac\MoneyTransferPermissionEnum;
-use App\Money\Domain\Enums\Rbac\MoneyWalletPermissionEnum;
 use ZnSandbox\Sandbox\Person\Domain\Enums\Rbac\AppPersonPermissionEnum;
 use ZnBundle\Dashboard\Domain\Enums\Rbac\DashboardPermissionEnum;
 use ZnBundle\Language\Domain\Enums\Rbac\LanguageCurrentPermissionEnum;
@@ -42,7 +31,6 @@ return [
     'roleEnums' => [
         ApplicationRoleEnum::class,
         SystemRoleEnum::class,
-        MoneyRoleEnum::class,
     ],
     'permissionEnums' => [
         AppUserPermissionEnum::class,
@@ -83,71 +71,16 @@ return [
             LanguageCurrentPermissionEnum::SWITCH,
             UserRegistrationPermissionEnum::REQUEST_ACTIVATION_CODE,
             UserRegistrationPermissionEnum::CREATE_ACCOUNT,
-
-            GameCategoryPermissionEnum::ALL,
-            GameCategoryPermissionEnum::ONE,
-
-            GameGamePermissionEnum::ALL,
-            GameGamePermissionEnum::ONE,
-
-            GamePartnerPermissionEnum::ALL,
-            GamePartnerPermissionEnum::ONE,
-
         ],
         SystemRoleEnum::USER => [
             SystemRoleEnum::GUEST,
             SecurityPermissionEnum::UPDATE_PASSWORD_UPDATE,
             AppPersonPermissionEnum::PERSON_INFO_UPDATE,
             AppPersonPermissionEnum::PERSON_INFO_ONE,
-
-            MoneyWalletPermissionEnum::All,
-
-            MoneyTransactionPermissionEnum::ALL,
-            MoneyTransactionPermissionEnum::ONE,
-//            MoneyTransactionPermissionEnum::CREATE,
-//            MoneyTransactionPermissionEnum::UPDATE,
-//            MoneyTransactionPermissionEnum::DELETE,
-
-            MoneyTransferPermissionEnum::TRANSFER,
-        ],
-        MoneyRoleEnum::MONEY_ISSUER => [
-            SystemRoleEnum::USER,
-
-            MoneyIssuePermissionEnum::ISSUE,
         ],
         SystemRoleEnum::ADMINISTRATOR => [
 //            SystemRoleEnum::GUEST,
             SystemRoleEnum::USER,
-
-            GameCategoryPermissionEnum::CREATE,
-            GameCategoryPermissionEnum::UPDATE,
-            GameCategoryPermissionEnum::DELETE,
-
-            GameGamePermissionEnum::CREATE,
-            GameGamePermissionEnum::UPDATE,
-            GameGamePermissionEnum::DELETE,
-
-            GamePartnerPermissionEnum::CREATE,
-            GamePartnerPermissionEnum::UPDATE,
-            GamePartnerPermissionEnum::DELETE,
-
-            TournamentTournamentPermissionEnum::ALL,
-            TournamentTournamentPermissionEnum::ONE,
-            TournamentTournamentPermissionEnum::CREATE,
-            TournamentTournamentPermissionEnum::UPDATE,
-            TournamentTournamentPermissionEnum::DELETE,
-
-            TournamentScramblePermissionEnum::ALL,
-            TournamentScramblePermissionEnum::ONE,
-            TournamentScramblePermissionEnum::CREATE,
-            TournamentScramblePermissionEnum::UPDATE,
-            TournamentScramblePermissionEnum::DELETE,
-
-            TournamentSubscriptionPermissionEnum::ALL,
-            TournamentSubscriptionPermissionEnum::ONE,
-            TournamentSubscriptionPermissionEnum::CREATE,
-            TournamentSubscriptionPermissionEnum::UPDATE,
-            TournamentSubscriptionPermissionEnum::DELETE,
 
             ApplicationPermissionEnum::ALL,
             ApplicationPermissionEnum::ONE,
