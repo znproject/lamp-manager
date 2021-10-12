@@ -46,4 +46,5 @@ App::initVarsFromArray([
 
 App::init();
 
-//skipTask('zn:fixtures_import');
+skipTask('zn:fixtures_import');
+skipTask('zn:migrate_up');
