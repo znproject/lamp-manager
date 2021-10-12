@@ -15,7 +15,7 @@ require_once __DIR__ . '/vendor/zntool/deployer/src/recipe/tools.php';
 App::initVarsFromArray([
     'repository' => 'git@github.com:znproject/lamp-manager.git',
     'branch' => 'main',
-    'deploy_path' => '/var/www/tool/-manager',
+    'deploy_path' => '/var/www/tool/lamp-manager',
     'release_path' => '/var/www/tool/lamp-manager',
     'release_public_path' => '{{release_path}}/public',
     'deploy_public_path' => '{{current_path}}/public',
