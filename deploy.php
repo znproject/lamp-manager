@@ -45,3 +45,5 @@ App::initVarsFromArray([
 ]);
 
 App::init();
+
+skipTask('zn:fixtures_import');
