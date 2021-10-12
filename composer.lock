@@ -4,350 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a3e7b658d411a8caf0bcf0eaebbf8b89",
+    "content-hash": "d5307b5615090cbd0a769f01ffb5970e",
     "packages": [
-        {
-            "name": "doctrine/cache",
-            "version": "2.1.x-dev",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/doctrine/cache.git",
-                "reference": "331b4d5dbaeab3827976273e9356b3b453c300ce"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/cache/zipball/331b4d5dbaeab3827976273e9356b3b453c300ce",
-                "reference": "331b4d5dbaeab3827976273e9356b3b453c300ce",
-                "shasum": ""
-            },
-            "require": {
-                "php": "~7.1 || ^8.0"
-            },
-            "conflict": {
-                "doctrine/common": ">2.2,<2.4"
-            },
-            "require-dev": {
-                "alcaeus/mongo-php-adapter": "^1.1",
-                "cache/integration-tests": "dev-master",
-                "doctrine/coding-standard": "^8.0",
-                "mongodb/mongodb": "^1.1",
-                "phpunit/phpunit": "^7.0 || ^8.0 || ^9.0",
-                "predis/predis": "~1.0",
-                "psr/cache": "^1.0 || ^2.0 || ^3.0",
-                "symfony/cache": "^4.4 || ^5.2 || ^6.0@dev",
-                "symfony/var-exporter": "^4.4 || ^5.2 || ^6.0@dev"
-            },
-            "suggest": {
-                "alcaeus/mongo-php-adapter": "Required to use legacy MongoDB driver"
-            },
-            "default-branch": true,
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Doctrine\\Common\\Cache\\": "lib/Doctrine/Common/Cache"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Guilherme Blanco",
-                    "email": "guilhermeblanco@gmail.com"
-                },
-                {
-                    "name": "Roman Borschel",
-                    "email": "roman@code-factory.org"
-                },
-                {
-                    "name": "Benjamin Eberlei",
-                    "email": "kontakt@beberlei.de"
-                },
-                {
-                    "name": "Jonathan Wage",
-                    "email": "jonwage@gmail.com"
-                },
-                {
-                    "name": "Johannes Schmitt",
-                    "email": "schmittjoh@gmail.com"
-                }
-            ],
-            "description": "PHP Doctrine Cache library is a popular cache implementation that supports many different drivers such as redis, memcache, apc, mongodb and others.",
-            "homepage": "https://www.doctrine-project.org/projects/cache.html",
-            "keywords": [
-                "abstraction",
-                "apcu",
-                "cache",
-                "caching",
-                "couchdb",
-                "memcached",
-                "php",
-                "redis",
-                "xcache"
-            ],
-            "support": {
-                "issues": "https://github.com/doctrine/cache/issues",
-                "source": "https://github.com/doctrine/cache/tree/2.1.1"
-            },
-            "funding": [
-                {
-                    "url": "https://www.doctrine-project.org/sponsorship.html",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://www.patreon.com/phpdoctrine",
-                    "type": "patreon"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/doctrine%2Fcache",
-                    "type": "tidelift"
-                }
-            ],
-            "time": "2021-07-17T14:49:29+00:00"
-        },
-        {
-            "name": "doctrine/dbal",
-            "version": "2.13.x-dev",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/doctrine/dbal.git",
-                "reference": "cbd8cd8e41b0bd60730e8dfc1487658b4e5b8cdf"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/dbal/zipball/cbd8cd8e41b0bd60730e8dfc1487658b4e5b8cdf",
-                "reference": "cbd8cd8e41b0bd60730e8dfc1487658b4e5b8cdf",
-                "shasum": ""
-            },
-            "require": {
-                "doctrine/cache": "^1.0|^2.0",
-                "doctrine/deprecations": "^0.5.3",
-                "doctrine/event-manager": "^1.0",
-                "ext-pdo": "*",
-                "php": "^7.1 || ^8"
-            },
-            "require-dev": {
-                "doctrine/coding-standard": "9.0.0",
-                "jetbrains/phpstorm-stubs": "2021.1",
-                "phpstan/phpstan": "0.12.99",
-                "phpunit/phpunit": "^7.5.20|^8.5|9.5.10",
-                "psalm/plugin-phpunit": "0.16.1",
-                "squizlabs/php_codesniffer": "3.6.1",
-                "symfony/cache": "^4.4",
-                "symfony/console": "^2.0.5|^3.0|^4.0|^5.0",
-                "vimeo/psalm": "4.10.0"
-            },
-            "suggest": {
-                "symfony/console": "For helpful console commands such as SQL execution and import of files."
-            },
-            "bin": [
-                "bin/doctrine-dbal"
-            ],
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Doctrine\\DBAL\\": "lib/Doctrine/DBAL"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Guilherme Blanco",
-                    "email": "guilhermeblanco@gmail.com"
-                },
-                {
-                    "name": "Roman Borschel",
-                    "email": "roman@code-factory.org"
-                },
-                {
-                    "name": "Benjamin Eberlei",
-                    "email": "kontakt@beberlei.de"
-                },
-                {
-                    "name": "Jonathan Wage",
-                    "email": "jonwage@gmail.com"
-                }
-            ],
-            "description": "Powerful PHP database abstraction layer (DBAL) with many features for database schema introspection and management.",
-            "homepage": "https://www.doctrine-project.org/projects/dbal.html",
-            "keywords": [
-                "abstraction",
-                "database",
-                "db2",
-                "dbal",
-                "mariadb",
-                "mssql",
-                "mysql",
-                "oci8",
-                "oracle",
-                "pdo",
-                "pgsql",
-                "postgresql",
-                "queryobject",
-                "sasql",
-                "sql",
-                "sqlanywhere",
-                "sqlite",
-                "sqlserver",
-                "sqlsrv"
-            ],
-            "support": {
-                "issues": "https://github.com/doctrine/dbal/issues",
-                "source": "https://github.com/doctrine/dbal/tree/2.13.x"
-            },
-            "funding": [
-                {
-                    "url": "https://www.doctrine-project.org/sponsorship.html",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://www.patreon.com/phpdoctrine",
-                    "type": "patreon"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/doctrine%2Fdbal",
-                    "type": "tidelift"
-                }
-            ],
-            "time": "2021-10-11T10:06:10+00:00"
-        },
-        {
-            "name": "doctrine/deprecations",
-            "version": "v0.5.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/doctrine/deprecations.git",
-                "reference": "9504165960a1f83cc1480e2be1dd0a0478561314"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/deprecations/zipball/9504165960a1f83cc1480e2be1dd0a0478561314",
-                "reference": "9504165960a1f83cc1480e2be1dd0a0478561314",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^7.1|^8.0"
-            },
-            "require-dev": {
-                "doctrine/coding-standard": "^6.0|^7.0|^8.0",
-                "phpunit/phpunit": "^7.0|^8.0|^9.0",
-                "psr/log": "^1.0"
-            },
-            "suggest": {
-                "psr/log": "Allows logging deprecations via PSR-3 logger implementation"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Doctrine\\Deprecations\\": "lib/Doctrine/Deprecations"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "description": "A small layer on top of trigger_error(E_USER_DEPRECATED) or PSR-3 logging with options to disable all deprecations or selectively for packages.",
-            "homepage": "https://www.doctrine-project.org/",
-            "support": {
-                "issues": "https://github.com/doctrine/deprecations/issues",
-                "source": "https://github.com/doctrine/deprecations/tree/v0.5.3"
-            },
-            "time": "2021-03-21T12:59:47+00:00"
-        },
-        {
-            "name": "doctrine/event-manager",
-            "version": "1.2.x-dev",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/doctrine/event-manager.git",
-                "reference": "eb044d4b27d552d4065fbc0548183e24815240a8"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/event-manager/zipball/eb044d4b27d552d4065fbc0548183e24815240a8",
-                "reference": "eb044d4b27d552d4065fbc0548183e24815240a8",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^7.1 || ^8.0"
-            },
-            "conflict": {
-                "doctrine/common": "<2.9@dev"
-            },
-            "require-dev": {
-                "doctrine/coding-standard": "^8.0",
-                "phpstan/phpstan": "^0.12.58",
-                "phpunit/phpunit": "^7.0 || ^8.0 || ^9.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Doctrine\\Common\\": "lib/Doctrine/Common"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Guilherme Blanco",
-                    "email": "guilhermeblanco@gmail.com"
-                },
-                {
-                    "name": "Roman Borschel",
-                    "email": "roman@code-factory.org"
-                },
-                {
-                    "name": "Benjamin Eberlei",
-                    "email": "kontakt@beberlei.de"
-                },
-                {
-                    "name": "Jonathan Wage",
-                    "email": "jonwage@gmail.com"
-                },
-                {
-                    "name": "Johannes Schmitt",
-                    "email": "schmittjoh@gmail.com"
-                },
-                {
-                    "name": "Marco Pivetta",
-                    "email": "ocramius@gmail.com"
-                }
-            ],
-            "description": "The Doctrine Event Manager is a simple PHP event system that was built to be used with the various Doctrine projects.",
-            "homepage": "https://www.doctrine-project.org/projects/event-manager.html",
-            "keywords": [
-                "event",
-                "event dispatcher",
-                "event manager",
-                "event system",
-                "events"
-            ],
-            "support": {
-                "issues": "https://github.com/doctrine/event-manager/issues",
-                "source": "https://github.com/doctrine/event-manager/tree/1.2.x"
-            },
-            "funding": [
-                {
-                    "url": "https://www.doctrine-project.org/sponsorship.html",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://www.patreon.com/phpdoctrine",
-                    "type": "patreon"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/doctrine%2Fevent-manager",
-                    "type": "tidelift"
-                }
-            ],
-            "time": "2021-01-20T18:51:22+00:00"
-        },
         {
             "name": "doctrine/inflector",
             "version": "2.1.x-dev",
@@ -1005,71 +663,6 @@
             "time": "2021-09-08T12:07:35+00:00"
         },
         {
-            "name": "illuminate/database",
-            "version": "6.x-dev",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/illuminate/database.git",
-                "reference": "498fba63c2001432f97705bab132838fc44fdaf2"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/database/zipball/498fba63c2001432f97705bab132838fc44fdaf2",
-                "reference": "498fba63c2001432f97705bab132838fc44fdaf2",
-                "shasum": ""
-            },
-            "require": {
-                "ext-json": "*",
-                "illuminate/container": "^6.0",
-                "illuminate/contracts": "^6.0",
-                "illuminate/support": "^6.0",
-                "php": "^7.2.5|^8.0"
-            },
-            "suggest": {
-                "doctrine/dbal": "Required to rename columns and drop SQLite columns (^2.6).",
-                "fakerphp/faker": "Required to use the eloquent factory builder (^1.9.1).",
-                "illuminate/console": "Required to use the database commands (^6.0).",
-                "illuminate/events": "Required to use the observers with Eloquent (^6.0).",
-                "illuminate/filesystem": "Required to use the migrations (^6.0).",
-                "illuminate/pagination": "Required to paginate the result set (^6.0).",
-                "symfony/finder": "Required to use Eloquent model factories (^4.3.4)."
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "6.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Illuminate\\Database\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Taylor Otwell",
-                    "email": "taylor@laravel.com"
-                }
-            ],
-            "description": "The Illuminate Database package.",
-            "homepage": "https://laravel.com",
-            "keywords": [
-                "database",
-                "laravel",
-                "orm",
-                "sql"
-            ],
-            "support": {
-                "issues": "https://github.com/laravel/framework/issues",
-                "source": "https://github.com/laravel/framework"
-            },
-            "time": "2021-09-29T13:14:17+00:00"
-        },
-        {
             "name": "illuminate/support",
             "version": "6.x-dev",
             "source": {
@@ -1133,106 +726,6 @@
                 "source": "https://github.com/laravel/framework"
             },
             "time": "2021-09-08T12:07:35+00:00"
-        },
-        {
-            "name": "monolog/monolog",
-            "version": "dev-main",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Seldaek/monolog.git",
-                "reference": "d1c28292689764504cbaab2beec8ddd0a54bcc1c"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/d1c28292689764504cbaab2beec8ddd0a54bcc1c",
-                "reference": "d1c28292689764504cbaab2beec8ddd0a54bcc1c",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=7.2",
-                "psr/log": "^1.0.1 || ^2.0 || ^3.0"
-            },
-            "provide": {
-                "psr/log-implementation": "1.0.0 || 2.0.0 || 3.0.0"
-            },
-            "require-dev": {
-                "aws/aws-sdk-php": "^2.4.9 || ^3.0",
-                "doctrine/couchdb": "~1.0@dev",
-                "elasticsearch/elasticsearch": "^7",
-                "graylog2/gelf-php": "^1.4.2",
-                "mongodb/mongodb": "^1.8",
-                "php-amqplib/php-amqplib": "~2.4 || ^3",
-                "php-console/php-console": "^3.1.3",
-                "phpspec/prophecy": "^1.6.1",
-                "phpstan/phpstan": "^0.12.91",
-                "phpunit/phpunit": "^8.5",
-                "predis/predis": "^1.1",
-                "rollbar/rollbar": "^1.3",
-                "ruflin/elastica": ">=0.90@dev",
-                "swiftmailer/swiftmailer": "^5.3|^6.0"
-            },
-            "suggest": {
-                "aws/aws-sdk-php": "Allow sending log messages to AWS services like DynamoDB",
-                "doctrine/couchdb": "Allow sending log messages to a CouchDB server",
-                "elasticsearch/elasticsearch": "Allow sending log messages to an Elasticsearch server via official client",
-                "ext-amqp": "Allow sending log messages to an AMQP server (1.0+ required)",
-                "ext-curl": "Required to send log messages using the IFTTTHandler, the LogglyHandler, the SendGridHandler, the SlackWebhookHandler or the TelegramBotHandler",
-                "ext-mbstring": "Allow to work properly with unicode symbols",
-                "ext-mongodb": "Allow sending log messages to a MongoDB server (via driver)",
-                "ext-openssl": "Required to send log messages using SSL",
-                "ext-sockets": "Allow sending log messages to a Syslog server (via UDP driver)",
-                "graylog2/gelf-php": "Allow sending log messages to a GrayLog2 server",
-                "mongodb/mongodb": "Allow sending log messages to a MongoDB server (via library)",
-                "php-amqplib/php-amqplib": "Allow sending log messages to an AMQP server using php-amqplib",
-                "php-console/php-console": "Allow sending log messages to Google Chrome",
-                "rollbar/rollbar": "Allow sending log messages to Rollbar",
-                "ruflin/elastica": "Allow sending log messages to an Elastic Search server"
-            },
-            "default-branch": true,
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-main": "2.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Monolog\\": "src/Monolog"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Jordi Boggiano",
-                    "email": "j.boggiano@seld.be",
-                    "homepage": "https://seld.be"
-                }
-            ],
-            "description": "Sends your logs to files, sockets, inboxes, databases and various web services",
-            "homepage": "https://github.com/Seldaek/monolog",
-            "keywords": [
-                "log",
-                "logging",
-                "psr-3"
-            ],
-            "support": {
-                "issues": "https://github.com/Seldaek/monolog/issues",
-                "source": "https://github.com/Seldaek/monolog/tree/main"
-            },
-            "funding": [
-                {
-                    "url": "https://github.com/Seldaek",
-                    "type": "github"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/monolog/monolog",
-                    "type": "tidelift"
-                }
-            ],
-            "time": "2021-10-02T20:05:18+00:00"
         },
         {
             "name": "nesbot/carbon",
@@ -1328,115 +821,6 @@
                 }
             ],
             "time": "2021-09-18T20:53:09+00:00"
-        },
-        {
-            "name": "phpseclib/phpseclib",
-            "version": "2.0.x-dev",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/phpseclib/phpseclib.git",
-                "reference": "eacb9f86140f0aa196259776d5769837c7fea85a"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/phpseclib/phpseclib/zipball/eacb9f86140f0aa196259776d5769837c7fea85a",
-                "reference": "eacb9f86140f0aa196259776d5769837c7fea85a",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.3"
-            },
-            "require-dev": {
-                "phing/phing": "~2.7",
-                "phpunit/phpunit": "^4.8.35|^5.7|^6.0|^9.4",
-                "squizlabs/php_codesniffer": "~2.0"
-            },
-            "suggest": {
-                "ext-gmp": "Install the GMP (GNU Multiple Precision) extension in order to speed up arbitrary precision integer arithmetic operations.",
-                "ext-libsodium": "SSH2/SFTP can make use of some algorithms provided by the libsodium-php extension.",
-                "ext-mcrypt": "Install the Mcrypt extension in order to speed up a few other cryptographic operations.",
-                "ext-openssl": "Install the OpenSSL extension in order to speed up a wide variety of cryptographic operations."
-            },
-            "type": "library",
-            "autoload": {
-                "files": [
-                    "phpseclib/bootstrap.php"
-                ],
-                "psr-4": {
-                    "phpseclib\\": "phpseclib/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Jim Wigginton",
-                    "email": "terrafrost@php.net",
-                    "role": "Lead Developer"
-                },
-                {
-                    "name": "Patrick Monnerat",
-                    "email": "pm@datasphere.ch",
-                    "role": "Developer"
-                },
-                {
-                    "name": "Andreas Fischer",
-                    "email": "bantu@phpbb.com",
-                    "role": "Developer"
-                },
-                {
-                    "name": "Hans-Jürgen Petrich",
-                    "email": "petrich@tronic-media.com",
-                    "role": "Developer"
-                },
-                {
-                    "name": "Graham Campbell",
-                    "email": "graham@alt-three.com",
-                    "role": "Developer"
-                }
-            ],
-            "description": "PHP Secure Communications Library - Pure-PHP implementations of RSA, AES, SSH2, SFTP, X.509 etc.",
-            "homepage": "http://phpseclib.sourceforge.net",
-            "keywords": [
-                "BigInteger",
-                "aes",
-                "asn.1",
-                "asn1",
-                "blowfish",
-                "crypto",
-                "cryptography",
-                "encryption",
-                "rsa",
-                "security",
-                "sftp",
-                "signature",
-                "signing",
-                "ssh",
-                "twofish",
-                "x.509",
-                "x509"
-            ],
-            "support": {
-                "issues": "https://github.com/phpseclib/phpseclib/issues",
-                "source": "https://github.com/phpseclib/phpseclib/tree/2.0"
-            },
-            "funding": [
-                {
-                    "url": "https://github.com/terrafrost",
-                    "type": "github"
-                },
-                {
-                    "url": "https://www.patreon.com/phpseclib",
-                    "type": "patreon"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/phpseclib/phpseclib",
-                    "type": "tidelift"
-                }
-            ],
-            "time": "2021-10-11T14:02:22+00:00"
         },
         {
             "name": "psr/cache",
@@ -2853,69 +2237,6 @@
                 }
             ],
             "time": "2021-07-12T14:48:14+00:00"
-        },
-        {
-            "name": "symfony/expression-language",
-            "version": "5.4.x-dev",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/expression-language.git",
-                "reference": "8e47a1acf7508d9bd8fe881365dbc56cd542dde8"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/expression-language/zipball/8e47a1acf7508d9bd8fe881365dbc56cd542dde8",
-                "reference": "8e47a1acf7508d9bd8fe881365dbc56cd542dde8",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=7.2.5",
-                "symfony/cache": "^4.4|^5.0|^6.0",
-                "symfony/service-contracts": "^1.1|^2"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Symfony\\Component\\ExpressionLanguage\\": ""
-                },
-                "exclude-from-classmap": [
-                    "/Tests/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
-                },
-                {
-                    "name": "Symfony Community",
-                    "homepage": "https://symfony.com/contributors"
-                }
-            ],
-            "description": "Provides an engine that can compile and evaluate expressions",
-            "homepage": "https://symfony.com",
-            "support": {
-                "source": "https://github.com/symfony/expression-language/tree/5.4"
-            },
-            "funding": [
-                {
-                    "url": "https://symfony.com/sponsor",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://github.com/fabpot",
-                    "type": "github"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
-                    "type": "tidelift"
-                }
-            ],
-            "time": "2021-09-09T08:06:01+00:00"
         },
         {
             "name": "symfony/filesystem",
@@ -6065,248 +5386,6 @@
             "time": "2021-09-20T06:13:37+00:00"
         },
         {
-            "name": "znbundle/language",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/znbundle/language.git",
-                "reference": "6701d3ee0d420131cb84fd48c64eff536c7f79d3"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/znbundle/language/zipball/6701d3ee0d420131cb84fd48c64eff536c7f79d3",
-                "reference": "6701d3ee0d420131cb84fd48c64eff536c7f79d3",
-                "shasum": ""
-            },
-            "require": {
-                "symfony/serializer": "4.*|5.*"
-            },
-            "default-branch": true,
-            "type": "extension",
-            "autoload": {
-                "psr-4": {
-                    "ZnBundle\\Language\\": "src",
-                    "ZnBundle\\Language\\Tests\\": "tests"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Yamshikov Vitaliy",
-                    "email": "theyamshikov@yandex.ru"
-                }
-            ],
-            "support": {
-                "issues": "https://github.com/znbundle/language/issues",
-                "source": "https://github.com/znbundle/language/tree/master"
-            },
-            "time": "2021-10-11T09:04:29+00:00"
-        },
-        {
-            "name": "znbundle/log",
-            "version": "dev-main",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/znbundle/log.git",
-                "reference": "87a70478ee076b85657942db09e98c251551dabe"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/znbundle/log/zipball/87a70478ee076b85657942db09e98c251551dabe",
-                "reference": "87a70478ee076b85657942db09e98c251551dabe",
-                "shasum": ""
-            },
-            "require": {
-                "monolog/monolog": "~1.22 || ~2.0",
-                "psr/log": "~1.0"
-            },
-            "default-branch": true,
-            "type": "extension",
-            "autoload": {
-                "psr-4": {
-                    "ZnBundle\\Log\\": "src",
-                    "ZnBundle\\Log\\Tests\\": "tests"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Yamshikov Vitaliy",
-                    "email": "theyamshikov@yandex.ru"
-                }
-            ],
-            "support": {
-                "issues": "https://github.com/znbundle/log/issues",
-                "source": "https://github.com/znbundle/log/tree/main"
-            },
-            "time": "2021-09-13T14:05:25+00:00"
-        },
-        {
-            "name": "znbundle/notify",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/znbundle/notify.git",
-                "reference": "d0fe3c6f1ed12921526f4b365294b65eb4c14528"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/znbundle/notify/zipball/d0fe3c6f1ed12921526f4b365294b65eb4c14528",
-                "reference": "d0fe3c6f1ed12921526f4b365294b65eb4c14528",
-                "shasum": ""
-            },
-            "default-branch": true,
-            "type": "extension",
-            "autoload": {
-                "psr-4": {
-                    "ZnBundle\\Notify\\": "src",
-                    "ZnBundle\\Notify\\Tests\\": "tests"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Yamshikov Vitaliy",
-                    "email": "theyamshikov@yandex.ru"
-                }
-            ],
-            "support": {
-                "issues": "https://github.com/znbundle/notify/issues",
-                "source": "https://github.com/znbundle/notify/tree/master"
-            },
-            "time": "2021-09-10T09:28:48+00:00"
-        },
-        {
-            "name": "znbundle/queue",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/znbundle/queue.git",
-                "reference": "25699decfdb8a0707cba497480957bb51fd727a3"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/znbundle/queue/zipball/25699decfdb8a0707cba497480957bb51fd727a3",
-                "reference": "25699decfdb8a0707cba497480957bb51fd727a3",
-                "shasum": ""
-            },
-            "require": {
-                "symfony/console": "4.*|5.*"
-            },
-            "default-branch": true,
-            "type": "extension",
-            "autoload": {
-                "psr-4": {
-                    "ZnBundle\\Queue\\": "src",
-                    "ZnBundle\\Queue\\Tests\\": "tests"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Yamshikov Vitaliy",
-                    "email": "theyamshikov@yandex.ru"
-                }
-            ],
-            "support": {
-                "issues": "https://github.com/znbundle/queue/issues",
-                "source": "https://github.com/znbundle/queue/tree/master"
-            },
-            "time": "2021-08-03T09:47:16+00:00"
-        },
-        {
-            "name": "znbundle/rbac",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/znbundle/rbac.git",
-                "reference": "27472cdbac8f5d6ffa248f0e64828bad44c8ded7"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/znbundle/rbac/zipball/27472cdbac8f5d6ffa248f0e64828bad44c8ded7",
-                "reference": "27472cdbac8f5d6ffa248f0e64828bad44c8ded7",
-                "shasum": ""
-            },
-            "default-branch": true,
-            "type": "extension",
-            "autoload": {
-                "psr-4": {
-                    "ZnBundle\\Rbac\\": "src",
-                    "ZnBundle\\Rbac\\Tests\\": "tests"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Yamshikov Vitaliy",
-                    "email": "theyamshikov@yandex.ru"
-                }
-            ],
-            "support": {
-                "issues": "https://github.com/znbundle/rbac/issues",
-                "source": "https://github.com/znbundle/rbac/tree/master"
-            },
-            "time": "2021-10-11T08:35:14+00:00"
-        },
-        {
-            "name": "znbundle/user",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/znbundle/user.git",
-                "reference": "9e7d89d50e954af99d6ef1e50ee7aa6c15da889f"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/znbundle/user/zipball/9e7d89d50e954af99d6ef1e50ee7aa6c15da889f",
-                "reference": "9e7d89d50e954af99d6ef1e50ee7aa6c15da889f",
-                "shasum": ""
-            },
-            "require": {
-                "symfony/password-hasher": "^5.3|^6.0",
-                "symfony/serializer": "4.*|5.*"
-            },
-            "default-branch": true,
-            "type": "extension",
-            "autoload": {
-                "psr-4": {
-                    "ZnBundle\\User\\": "src",
-                    "ZnBundle\\User\\Tests\\": "tests"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Yamshikov Vitaliy",
-                    "email": "theyamshikov@yandex.ru"
-                }
-            ],
-            "support": {
-                "issues": "https://github.com/znbundle/user/issues",
-                "source": "https://github.com/znbundle/user/tree/master"
-            },
-            "time": "2021-10-11T11:11:05+00:00"
-        },
-        {
             "name": "zncore/base",
             "version": "v0.0.49",
             "source": {
@@ -6434,109 +5513,6 @@
             "time": "2021-10-12T10:01:16+00:00"
         },
         {
-            "name": "zncrypt/base",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/zncrypt/base.git",
-                "reference": "59babb7f8d90582f344147c60390609ad7db327b"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/zncrypt/base/zipball/59babb7f8d90582f344147c60390609ad7db327b",
-                "reference": "59babb7f8d90582f344147c60390609ad7db327b",
-                "shasum": ""
-            },
-            "require": {
-                "phpseclib/phpseclib": "^2.0",
-                "zncore/base": "v0.0.*"
-            },
-            "default-branch": true,
-            "type": "extension",
-            "autoload": {
-                "psr-4": {
-                    "ZnCrypt\\Base\\": "src",
-                    "ZnCrypt\\Base\\Tests\\": "tests"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Yamshikov Vitaliy",
-                    "email": "theyamshikov@yandex.ru"
-                }
-            ],
-            "support": {
-                "issues": "https://github.com/zncrypt/base/issues",
-                "source": "https://github.com/zncrypt/base/tree/v0.0.15"
-            },
-            "time": "2021-10-12T05:28:49+00:00"
-        },
-        {
-            "name": "znfork/casbin",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/znfork/php-casbin.git",
-                "reference": "e1955f59ae6ed5cbe13eadabc84d735d2dc437f3"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/znfork/php-casbin/zipball/e1955f59ae6ed5cbe13eadabc84d735d2dc437f3",
-                "reference": "e1955f59ae6ed5cbe13eadabc84d735d2dc437f3",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=7.1.0",
-                "symfony/expression-language": "^3.4|^4.0|^5.0"
-            },
-            "require-dev": {
-                "php-coveralls/php-coveralls": "^2.1",
-                "phpstan/phpstan": "^0.12",
-                "phpunit/phpunit": "~7.0|~8.0|~9.0"
-            },
-            "default-branch": true,
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Casbin\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "Apache-2.0"
-            ],
-            "authors": [
-                {
-                    "name": "TechLee",
-                    "email": "techlee@qq.com"
-                }
-            ],
-            "description": "a powerful and efficient open-source access control library for php projects.",
-            "keywords": [
-                "abac",
-                "access control",
-                "acl",
-                "authorization",
-                "casbin",
-                "permission",
-                "rbac"
-            ],
-            "support": {
-                "source": "https://github.com/znfork/php-casbin/tree/v0.0.1"
-            },
-            "funding": [
-                {
-                    "url": "https://opencollective.com/casbin",
-                    "type": "open_collective"
-                }
-            ],
-            "time": "2021-03-11T09:45:47+00:00"
-        },
-        {
             "name": "znlib/console",
             "version": "dev-master",
             "source": {
@@ -6578,88 +5554,6 @@
             "time": "2021-06-26T18:22:13+00:00"
         },
         {
-            "name": "znlib/db",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/znlib/db.git",
-                "reference": "75252b19b3e165aabb5c35f7fc7cc16c84c07561"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/znlib/db/zipball/75252b19b3e165aabb5c35f7fc7cc16c84c07561",
-                "reference": "75252b19b3e165aabb5c35f7fc7cc16c84c07561",
-                "shasum": ""
-            },
-            "require": {
-                "illuminate/database": "^6.3"
-            },
-            "default-branch": true,
-            "type": "extension",
-            "autoload": {
-                "psr-4": {
-                    "ZnLib\\Db\\": "src",
-                    "ZnLib\\Db\\Tests\\": "tests"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Yamshikov Vitaliy",
-                    "email": "theyamshikov@yandex.ru"
-                }
-            ],
-            "support": {
-                "issues": "https://github.com/znlib/db/issues",
-                "source": "https://github.com/znlib/db/tree/master"
-            },
-            "time": "2021-10-06T09:53:24+00:00"
-        },
-        {
-            "name": "znlib/fixture",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/znlib/fixture.git",
-                "reference": "9d1e05f7421a54da231aa4b66a97c9c53b74d85a"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/znlib/fixture/zipball/9d1e05f7421a54da231aa4b66a97c9c53b74d85a",
-                "reference": "9d1e05f7421a54da231aa4b66a97c9c53b74d85a",
-                "shasum": ""
-            },
-            "require": {
-                "doctrine/dbal": "^2.10"
-            },
-            "default-branch": true,
-            "type": "extension",
-            "autoload": {
-                "psr-4": {
-                    "ZnLib\\Fixture\\": "src",
-                    "ZnLib\\Fixture\\Tests\\": "tests"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Yamshikov Vitaliy",
-                    "email": "theyamshikov@yandex.ru"
-                }
-            ],
-            "support": {
-                "issues": "https://github.com/znlib/fixture/issues",
-                "source": "https://github.com/znlib/fixture/tree/master"
-            },
-            "time": "2021-09-16T10:31:11+00:00"
-        },
-        {
             "name": "znlib/init",
             "version": "dev-master",
             "source": {
@@ -6696,86 +5590,6 @@
                 "source": "https://github.com/znlib/init/tree/master"
             },
             "time": "2021-06-26T13:00:56+00:00"
-        },
-        {
-            "name": "znlib/migration",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/znlib/migration.git",
-                "reference": "eee702f6f554ee9e5cd57b1a5d649a93b3f295bb"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/znlib/migration/zipball/eee702f6f554ee9e5cd57b1a5d649a93b3f295bb",
-                "reference": "eee702f6f554ee9e5cd57b1a5d649a93b3f295bb",
-                "shasum": ""
-            },
-            "default-branch": true,
-            "type": "extension",
-            "autoload": {
-                "psr-4": {
-                    "ZnLib\\Migration\\": "src",
-                    "ZnLib\\Migration\\Tests\\": "tests"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Yamshikov Vitaliy",
-                    "email": "theyamshikov@yandex.ru"
-                }
-            ],
-            "support": {
-                "issues": "https://github.com/znlib/migration/issues",
-                "source": "https://github.com/znlib/migration/tree/master"
-            },
-            "time": "2021-09-13T05:55:56+00:00"
-        },
-        {
-            "name": "znlib/rest",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/znlib/rest.git",
-                "reference": "faa8da6b26ebc0ae58a7e4f0d8b2583f1505ec03"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/znlib/rest/zipball/faa8da6b26ebc0ae58a7e4f0d8b2583f1505ec03",
-                "reference": "faa8da6b26ebc0ae58a7e4f0d8b2583f1505ec03",
-                "shasum": ""
-            },
-            "require": {
-                "guzzlehttp/guzzle": ">5.3",
-                "symfony/serializer": "4.*|5.*"
-            },
-            "default-branch": true,
-            "type": "extension",
-            "autoload": {
-                "psr-4": {
-                    "ZnLib\\Rest\\": "src",
-                    "ZnLib\\Rest\\Tests\\": "tests"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Yamshikov Vitaliy",
-                    "email": "theyamshikov@yandex.ru"
-                }
-            ],
-            "support": {
-                "issues": "https://github.com/znlib/rest/issues",
-                "source": "https://github.com/znlib/rest/tree/master"
-            },
-            "time": "2021-09-13T08:24:17+00:00"
         },
         {
             "name": "znlib/web",
@@ -6869,164 +5683,6 @@
                 "source": "https://github.com/znsandbox/sandbox/tree/master"
             },
             "time": "2021-10-12T07:10:53+00:00"
-        },
-        {
-            "name": "znsymfony/admin-panel",
-            "version": "dev-main",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/znsymfony/admin-panel.git",
-                "reference": "ab9e5d2dd009303b5d5b131b51564c1fbb092570"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/znsymfony/admin-panel/zipball/ab9e5d2dd009303b5d5b131b51564c1fbb092570",
-                "reference": "ab9e5d2dd009303b5d5b131b51564c1fbb092570",
-                "shasum": ""
-            },
-            "require": {
-                "symfony/form": "^4.4|^5.3|^6.0"
-            },
-            "default-branch": true,
-            "type": "extension",
-            "autoload": {
-                "psr-4": {
-                    "ZnSymfony\\AdminPanel\\": "src",
-                    "ZnSymfony\\AdminPanel\\Tests\\": "tests"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Yamshikov Vitaliy",
-                    "email": "theyamshikov@yandex.ru"
-                }
-            ],
-            "support": {
-                "issues": "https://github.com/znsymfony/admin-panel/issues",
-                "source": "https://github.com/znsymfony/admin-panel/tree/main"
-            },
-            "time": "2021-10-06T09:53:29+00:00"
-        },
-        {
-            "name": "znuser/identity",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/znuser/identity.git",
-                "reference": "14295d8913d56d91ff9414beda7ec0554a972582"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/znuser/identity/zipball/14295d8913d56d91ff9414beda7ec0554a972582",
-                "reference": "14295d8913d56d91ff9414beda7ec0554a972582",
-                "shasum": ""
-            },
-            "default-branch": true,
-            "type": "extension",
-            "autoload": {
-                "psr-4": {
-                    "ZnUser\\Identity\\": "src",
-                    "ZnUser\\Identity\\Tests\\": "tests"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "ZnDeveloper",
-                    "email": "zndev@ya.ru"
-                }
-            ],
-            "support": {
-                "issues": "https://github.com/znuser/identity/issues",
-                "source": "https://github.com/znuser/identity/tree/master"
-            },
-            "time": "2021-08-21T10:30:31+00:00"
-        },
-        {
-            "name": "znuser/notify",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/znuser/notify.git",
-                "reference": "d4eb49d5d4e2fc39d296ede5acfe92927f56cb41"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/znuser/notify/zipball/d4eb49d5d4e2fc39d296ede5acfe92927f56cb41",
-                "reference": "d4eb49d5d4e2fc39d296ede5acfe92927f56cb41",
-                "shasum": ""
-            },
-            "default-branch": true,
-            "type": "extension",
-            "autoload": {
-                "psr-4": {
-                    "ZnUser\\Notify\\": "src",
-                    "ZnUser\\Notify\\Tests\\": "tests"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "ZnDeveloper",
-                    "email": "zndev@ya.ru"
-                }
-            ],
-            "support": {
-                "issues": "https://github.com/znuser/notify/issues",
-                "source": "https://github.com/znuser/notify/tree/master"
-            },
-            "time": "2021-09-10T11:30:56+00:00"
-        },
-        {
-            "name": "znuser/rbac",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/znuser/rbac.git",
-                "reference": "cf7e6fe784e842581553697d7023c5c92fea140e"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/znuser/rbac/zipball/cf7e6fe784e842581553697d7023c5c92fea140e",
-                "reference": "cf7e6fe784e842581553697d7023c5c92fea140e",
-                "shasum": ""
-            },
-            "require": {
-                "znfork/casbin": "dev-master"
-            },
-            "default-branch": true,
-            "type": "extension",
-            "autoload": {
-                "psr-4": {
-                    "ZnUser\\Rbac\\": "src",
-                    "ZnUser\\Rbac\\Tests\\": "tests"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "ZnDeveloper",
-                    "email": "zndev@ya.ru"
-                }
-            ],
-            "support": {
-                "issues": "https://github.com/znuser/rbac/issues",
-                "source": "https://github.com/znuser/rbac/tree/master"
-            },
-            "time": "2021-10-11T18:33:47+00:00"
         }
     ],
     "packages-dev": [
@@ -7157,6 +5813,106 @@
             },
             "abandoned": true,
             "time": "2019-12-12T13:45:57+00:00"
+        },
+        {
+            "name": "monolog/monolog",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Seldaek/monolog.git",
+                "reference": "d1c28292689764504cbaab2beec8ddd0a54bcc1c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/d1c28292689764504cbaab2beec8ddd0a54bcc1c",
+                "reference": "d1c28292689764504cbaab2beec8ddd0a54bcc1c",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2",
+                "psr/log": "^1.0.1 || ^2.0 || ^3.0"
+            },
+            "provide": {
+                "psr/log-implementation": "1.0.0 || 2.0.0 || 3.0.0"
+            },
+            "require-dev": {
+                "aws/aws-sdk-php": "^2.4.9 || ^3.0",
+                "doctrine/couchdb": "~1.0@dev",
+                "elasticsearch/elasticsearch": "^7",
+                "graylog2/gelf-php": "^1.4.2",
+                "mongodb/mongodb": "^1.8",
+                "php-amqplib/php-amqplib": "~2.4 || ^3",
+                "php-console/php-console": "^3.1.3",
+                "phpspec/prophecy": "^1.6.1",
+                "phpstan/phpstan": "^0.12.91",
+                "phpunit/phpunit": "^8.5",
+                "predis/predis": "^1.1",
+                "rollbar/rollbar": "^1.3",
+                "ruflin/elastica": ">=0.90@dev",
+                "swiftmailer/swiftmailer": "^5.3|^6.0"
+            },
+            "suggest": {
+                "aws/aws-sdk-php": "Allow sending log messages to AWS services like DynamoDB",
+                "doctrine/couchdb": "Allow sending log messages to a CouchDB server",
+                "elasticsearch/elasticsearch": "Allow sending log messages to an Elasticsearch server via official client",
+                "ext-amqp": "Allow sending log messages to an AMQP server (1.0+ required)",
+                "ext-curl": "Required to send log messages using the IFTTTHandler, the LogglyHandler, the SendGridHandler, the SlackWebhookHandler or the TelegramBotHandler",
+                "ext-mbstring": "Allow to work properly with unicode symbols",
+                "ext-mongodb": "Allow sending log messages to a MongoDB server (via driver)",
+                "ext-openssl": "Required to send log messages using SSL",
+                "ext-sockets": "Allow sending log messages to a Syslog server (via UDP driver)",
+                "graylog2/gelf-php": "Allow sending log messages to a GrayLog2 server",
+                "mongodb/mongodb": "Allow sending log messages to a MongoDB server (via library)",
+                "php-amqplib/php-amqplib": "Allow sending log messages to an AMQP server using php-amqplib",
+                "php-console/php-console": "Allow sending log messages to Google Chrome",
+                "rollbar/rollbar": "Allow sending log messages to Rollbar",
+                "ruflin/elastica": "Allow sending log messages to an Elastic Search server"
+            },
+            "default-branch": true,
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "2.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Monolog\\": "src/Monolog"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jordi Boggiano",
+                    "email": "j.boggiano@seld.be",
+                    "homepage": "https://seld.be"
+                }
+            ],
+            "description": "Sends your logs to files, sockets, inboxes, databases and various web services",
+            "homepage": "https://github.com/Seldaek/monolog",
+            "keywords": [
+                "log",
+                "logging",
+                "psr-3"
+            ],
+            "support": {
+                "issues": "https://github.com/Seldaek/monolog/issues",
+                "source": "https://github.com/Seldaek/monolog/tree/main"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/Seldaek",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/monolog/monolog",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2021-10-02T20:05:18+00:00"
         },
         {
             "name": "pimple/pimple",
@@ -8636,27 +7392,11 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "znbundle/language": 20,
-        "znbundle/log": 20,
-        "znbundle/notify": 20,
-        "znbundle/queue": 20,
-        "znbundle/rbac": 20,
-        "znbundle/user": 20,
         "zncore/domain": 20,
-        "zncrypt/base": 20,
-        "znfork/casbin": 20,
         "znlib/console": 20,
-        "znlib/db": 20,
-        "znlib/fixture": 20,
         "znlib/init": 20,
-        "znlib/migration": 20,
-        "znlib/rest": 20,
         "znlib/web": 20,
         "znsandbox/sandbox": 20,
-        "znsymfony/admin-panel": 20,
-        "znuser/identity": 20,
-        "znuser/notify": 20,
-        "znuser/rbac": 20,
         "zntool/deployer": 20,
         "zntool/dev": 20,
         "zntool/generator": 20,
