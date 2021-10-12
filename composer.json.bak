@@ -1,0 +1,64 @@
+{
+    "name": "znproject/lamp-manager",
+    "description": "Lamp manager",
+    "type": "project",
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.2",
+        "ext-intl": "*",
+        "ext-json": "*",
+        "symfony/config": "^4.4|^5.0|^6.0",
+        "symfony/form": "^4.4|^5.0",
+        "symfony/http-foundation": "^4.4|^5.0|^6.0",
+        "symfony/mailer": "^4.4|^5.0",
+        "symfony/messenger": "^4.4|^5.0",
+        "symfony/routing": "^4.4|^5.0|^6.0",
+        "symfony/framework-bundle": "^4.4|^5.0|^6.0",
+        "symfony/security-csrf": "^4.4|^5.0",
+        "znbundle/language": "dev-master",
+        "znbundle/log": "dev-main",
+        "znbundle/notify": "dev-master",
+        "znbundle/queue": "dev-master",
+        "znbundle/rbac": "dev-master",
+        "znbundle/user": "dev-master",
+        "zncore/domain": "dev-master",
+        "zncrypt/base": "dev-master",
+        "znfork/casbin": "dev-master",
+        "znlib/console": "dev-master",
+        "znlib/db": "dev-master",
+        "znlib/fixture": "dev-master",
+        "znlib/init": "dev-master",
+        "znlib/migration": "dev-master",
+        "znlib/rest": "dev-master",
+        "znlib/web": "dev-master",
+        "znsandbox/sandbox": "dev-master",
+        "znsymfony/admin-panel": "dev-main",
+        "znuser/identity": "dev-master",
+        "znuser/notify": "dev-master",
+        "znuser/rbac": "dev-master"
+    },
+    "require-dev": {
+        "zntool/deployer": "dev-main",
+        "symfony/browser-kit": "^4.4|^5.0",
+        "symfony/css-selector": "^4.4|^5.0",
+        "symfony/debug-pack": "*",
+        "symfony/dom-crawler": "^4.4|^5.0",
+        "symfony/http-client": "^4.4|^5.0",
+        "zntool/dev": "dev-master",
+        "zntool/generator": "dev-master",
+        "zntool/package": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}

@@ -16,7 +16,7 @@ $kernel = KernelFactory::createWebKernel($bundles, ['i18next', 'container', 'sym
 $application = ApplicationFactory::createWeb($kernel);
 $application->setLayout(__DIR__ . '/../src/Common/views/layouts/website/main.php');
 $application->setErrorController(ErrorController::class);
-$application->addSubscriber(WebAuthSubscriber::class);
-$application->addSubscriber(TokenSubscriber::class);
+//$application->addSubscriber(WebAuthSubscriber::class);
+//$application->addSubscriber(TokenSubscriber::class);
 $response = $application->run();
 $response->send();
