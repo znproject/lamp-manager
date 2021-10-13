@@ -6,7 +6,7 @@ return [
 
 
 
-//    new \ZnBundle\Log\Bundle(['all']),
+    new \ZnBundle\Log\Bundle(['all']),
 //    new \ZnBundle\Notify\Bundle(['all']),
 //    new \ZnBundle\Language\BundleNew(['all']),
 //    new \ZnBundle\User\NewBundle(['all']),

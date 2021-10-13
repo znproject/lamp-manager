@@ -11,6 +11,7 @@ class Bundle extends BaseBundle
     {
         return [
             new \ZnSandbox\Sandbox\Symfony\Bundle(['all']),
+            new \ZnLib\Web\Bundle(['all']),
         ];
     }
 
