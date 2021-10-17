@@ -29,12 +29,12 @@ $this->registerCssFile('/dist/css/site.css');
 </head>
 <body>
 
-<?//= $this->renderFile(__DIR__ . '/blocks/navbar.php') ?>
+<?= '' /*$this->renderFile(__DIR__ . '/blocks/navbar.php')*/ ?>
 
 <div class="container mt-3">
     <div class="row">
         <div class="col-12">
-<!--            --><?//= BreadcrumbWidget::widget() ?>
+            <?= '' /*BreadcrumbWidget::widget()*/ ?>
             <?= $content ?>
         </div>
     </div>
@@ -42,9 +42,9 @@ $this->registerCssFile('/dist/css/site.css');
 
 <!--<hr/>-->
 
-<?//= $this->renderFile(__DIR__ . '/blocks/footer.php') ?>
+<?= '' /*$this->renderFile(__DIR__ . '/blocks/footer.php')*/ ?>
 
-<?//= ToastrWidget::widget(['view' => $this]) ?>
+<?= '' /*ToastrWidget::widget(['view' => $this])*/ ?>
 <?= StyleWidget::widget(['view' => $this]) ?>
 <?= ScriptWidget::widget(['view' => $this]) ?>
 

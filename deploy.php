@@ -15,18 +15,24 @@ require_once __DIR__ . '/vendor/zntool/deployer/src/recipe/tools.php';
 App::initVarsFromArray([
     'repository' => 'git@github.com:znproject/lamp-manager.git',
     'branch' => 'main',
-    'deploy_path' => '/var/www/tool/lamp-manager',
-    'release_path' => '/var/www/tool/lamp-manager',
-    'release_public_path' => '{{release_path}}/public',
-    'deploy_public_path' => '{{current_path}}/public',
+    'deploy_path' => '/var/www/znproject/lamp-manager',
+//    'release_path' => '/var/www/casino-zero/tournament',
+//    'release_public_path' => '{{release_path}}/public_html',
+//    'deploy_public_path' => '{{current_path}}/public_html',
 
     'deploy_var_path' => '{{deploy_path}}/var',
     'release_var_path' => '{{release_path}}/var',
-    'current_path' => '{{deploy_path}}/current',
+//    'current_path' => '{{deploy_path}}/current',
 
-    'domain' => 'lamp.tool',
+//    'domain' => 'tournament.casino',
 
     'application' => 'mysite',
+    'domains' => [
+        [
+            'domain' => 'lamp-manager.project',
+            'directory' => '{{current_path}}/public',
+        ],
+    ],
     'permissions' => [
         [
             'path' => '{{deploy_var_path}}',
